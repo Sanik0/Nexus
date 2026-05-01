@@ -1,9 +1,11 @@
 import Image from "next/image";
+import Plasma from '@/components/ui/Plasma';
 
 export default function Home() {
   return (
     <div className="bg-black">
-      <nav className="bg-neutral-primary fixed w-full z-20 top-0 start-0 border-b border-white/10 ">
+      {/* Navigation */}
+      <nav className="bg-neutral-primary fixed w-full z-20 top-0 start-0 border-b bg-black border-white/10 ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="https://flowbite.com/"
@@ -64,7 +66,7 @@ export default function Home() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                  className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 "
                 >
                   About
                 </a>
@@ -72,7 +74,7 @@ export default function Home() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                  className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0"
                 >
                   Services
                 </a>
@@ -80,7 +82,7 @@ export default function Home() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                  className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0"
                 >
                   Contact
                 </a>
@@ -90,7 +92,71 @@ export default function Home() {
         </div>
       </nav>
 
-      
+      {/* Hero Section */}
+      <div className="w-full">
+        <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+          <Plasma
+            color="#ff6b35"
+            speed={0.6}
+            direction="forward"
+            scale={1.1}
+            opacity={0.8}
+            mouseInteractive={true}
+          />
+        </div>
+        <section className=" pt-30 h-screen">
+          <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+            <div
+              className="w-auto inline-flex items-center p-1 pe-2 mb-6 text-sm text-fg-brand-strong rounded-full border border-white/20"
+              role="alert"
+            >
+              <span className="bg-red-600 text-fg-brand-strong py-0.5 px-2 rounded-full">
+                New
+              </span>
+              <div className="ms-2 text-sm">
+                Crypto wallet savings
+              </div>
+              <svg
+                className="w-4 h-4 ms-1"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="m9 5 7 7-7 7"
+                />
+              </svg>
+            </div>
+            <h1 className="mb-6 max-w-7xl text-4xl font-bold leading-10 md:leading-20 tracking-tighter text-heading md:text-5xl lg:text-6xl">
+              NEXUS — The Self-Custody <br /> Crypto Wallet
+            </h1>
+            <p className="mb-8 text-base font-normal text-body md:text-xl">
+              A sleek, dark, modern crypto wallet targeting serious crypto users
+            </p>
+            <form className="w-full mx-auto flex items-center justify-center gap-3 ">
+              <button
+                type="button"
+                className="text-white bg-red-600 hover:bg-brand-strong box-border border border-transparent font-medium leading-5 rounded-md text-sm px-3 py-2 focus:outline-none"
+              >
+                Get in touch
+              </button>
+              <button
+                type="button"
+                className="text-white hover:bg-brand-strong box-border border border-transparent font-medium leading-5 rounded-md text-sm px-3 py-2 border-white/20 bg-black"
+              >
+                View Services
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
 
     </div>
 
