@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import Plasma from '@/components/ui/Plasma';
+import Plasma from '@/components/Plasma';
 
 export default function Home() {
   return (
@@ -94,9 +95,9 @@ export default function Home() {
 
       {/* Hero Section */}
       <div className="w-full">
-        <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+        <div style={{ width: '100%', height: '600px', position: 'absolute' }}>
           <Plasma
-            color="#ff6b35"
+            color="#DC2626"
             speed={0.6}
             direction="forward"
             scale={1.1}
