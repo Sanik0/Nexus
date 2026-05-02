@@ -226,7 +226,7 @@ export default function Home() {
               </div>
 
               {/* Mockup */}
-              <div className="w-full h-80 bg-zinc-950 rounded-2xl p-10 pb-0 relative overflow-hidden">
+              <div className="w-full h-80 bg-zinc-950 rounded-2xl p-5 pb-0 md:p-10 md:pb-0 relative overflow-hidden">
                 <div className="w-full h-full bg-black rounded-xl border-white/20 border flex flex-col gap-3 p-5">
                   <h1 className="text-base text-center font-medium  tracking-tighter text-heading md:text-xl">
                     What can i help you automate?
@@ -235,7 +235,18 @@ export default function Home() {
                     We design, develop, and implement automation tools that help you work smarter, not harder
                   </p>
                   <form action="" className="w-full">
-                    <input type="text" className="w-full border border-white/20 rounded-md focus:none" />
+                    <div className="w-full flex flex-col gap-3 border border-white/20 rounded-md focus:none p-3">
+                      <div className="flex items-center justify-center">
+                        <input type="text" className="w-full text-xs text-white/40" value={'Hello, world!'} />
+                        <div className="w-fit border-white/20 border p-1 rounded-[3px] flex items-center justify-center">
+                          <span className="material-symbols-rounded tet-red-600" style={{ fontSize: '15px', fontVariationSettings: "'wght' 100", color: '#DC2626' }}>send</span>
+                        </div>
+                      </div>
+                      <div className="w-fit border-white/20 border p-1 px-2 flex gap-1 bg-zinc-950 rounded-full items-center justify-center" style={{ fontSize: '10px' }}>
+                        <span className="material-symbols-rounded tet-red-600" style={{ fontSize: '15px', fontVariationSettings: "'wght' 100", color: '#DC2626' }}>add</span>
+                        add documents
+                      </div>
+                    </div>
                   </form>
                 </div>
                 <div className="absolute right-0 left-0 bottom-0 h-40 bg-gradient-to-t from-zinc-950 to-transparent">
