@@ -1,10 +1,20 @@
 "use client";
 import Image from "next/image";
 import Plasma from '@/components/Plasma';
+import LogoLoop from "@/components/LogoLoop";
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from "react-icons/si";
+
+// LogoLoop
+const techLogos = [
+  { node: <SiReact />, title: "React", href: "https://react.dev" },
+  { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
+  { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
+  { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+];
 
 export default function Home() {
   return (
-    <div className="bg-black">
+    <div className="bg-black realtive">
       {/* Navigation */}
       <nav className="bg-neutral-primary fixed w-full z-20 top-0 start-0 border-b bg-black border-white/10 ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -94,7 +104,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <div className="w-full">
+      <div className="w-full mt-20 relative">
         <div style={{ width: '100%', height: '600px', position: 'absolute' }}>
           <Plasma
             color="#DC2626"
@@ -104,8 +114,9 @@ export default function Home() {
             opacity={0.8}
             mouseInteractive={true}
           />
+          <div className="absolute bottom-0 h-32 right-0 left-0 bg-gradient-to-b from-transparent to-black "></div>
         </div>
-        <section className=" pt-30 h-screen">
+        <section className=" pt-20 mb-40">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
             <div
               className="w-auto inline-flex items-center p-1 pe-2 mb-6 text-sm text-fg-brand-strong rounded-full border border-white/20"
@@ -135,10 +146,10 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <h1 className="mb-6 max-w-7xl text-4xl font-bold leading-10 md:leading-20 tracking-tighter text-heading md:text-5xl lg:text-6xl">
+            <h1 className="mb-6 max-w-7xl text-4xl font-semibold leading-10 md:leading-20 tracking-tighter text-heading md:text-5xl lg:text-6xl">
               NEXUS — The Self-Custody <br /> Crypto Wallet
             </h1>
-            <p className="mb-8 text-base font-normal text-body md:text-xl">
+            <p className="mb-8 text-white/90 font-normal text-body md:text-xl">
               A sleek, dark, modern crypto wallet targeting serious crypto users
             </p>
             <form className="w-full mx-auto flex items-center justify-center gap-3 ">
@@ -150,13 +161,31 @@ export default function Home() {
               </button>
               <button
                 type="button"
-                className="text-white hover:bg-brand-strong box-border border border-transparent font-medium leading-5 rounded-md text-sm px-3 py-2 border-white/20 bg-black"
+                className="text-white hover:bg-brand-strong box-border border border-transparent font-medium leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md"
               >
                 View Services
               </button>
             </form>
           </div>
         </section>
+      </div>
+
+      {/* Tech Logos */}
+      <div className=" flex items-center justify-center gap-8 flex-col relative">
+        <h4 className="text-lg font-semibold text-heading">Over 50+ business trust us</h4>
+        <LogoLoop
+          className="max-w-5xl"
+          logos={techLogos}
+          speed={40}
+          direction="left"
+          logoHeight={50}
+          gap={50}
+          hoverSpeed={0}
+          scaleOnHover
+          fadeOut
+          fadeOutColor="#000000"
+          ariaLabel="Technology partners"
+        />
       </div>
 
     </div>
