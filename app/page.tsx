@@ -194,7 +194,7 @@ export default function Home() {
           Our Services
         </div>
         <div className="w-full max-w-4xl flex items-center justify-center gap-2 flex-col">
-          <h1 className="mb-6 text-2xl text-center font-medium leading-5 md:leading-15 tracking-tighter text-heading md:text-5xl">
+          <h1 className="mb-6 text-4xl text-center font-medium leading-10 md:leading-15 tracking-tighter text-heading md:text-5xl">
             AI Solutions That Take Your Business to the Next Level
           </h1>
           <p className="mb-8 text-center max-w-xl text-white/90 font-normal text-md md:text-md">
@@ -208,7 +208,7 @@ export default function Home() {
                 <div className="text-white hover:bg-brand-strong box-border border border-transparent font-medium w-fit mb-5 leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md">
                   Workflow Automation
                 </div>
-                <h1 className=" text-lg font-semibold mb-3 text-left tracking-tighter text-heading md:text-5xl lg:text-4xl">
+                <h1 className=" text-2xl font-semibold mb-3 text-left tracking-tighter text-heading md:text-5xl lg:text-4xl">
                   We invest in the world’s potential
                 </h1>
                 <p className="mb-6 text-white/80 font-medium text-left tracking-tighter text-heading md:text-base">
