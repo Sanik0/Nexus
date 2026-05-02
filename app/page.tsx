@@ -468,6 +468,82 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Process section */}
+      <div className="w-full py-40 pt-0 flex flex-col gap-10 px-6 items-center justify-center relative">
+        <div className="text-white hover:bg-brand-strong box-border border font-medium leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md" >
+          Our Process
+        </div>
+        <div className="w-full max-w-4xl flex items-center justify-center gap-2 flex-col">
+          <h1 className="mb-6 text-4xl text-center font-medium leading-10 md:leading-15 tracking-tighter text-heading md:text-5xl">
+            Our Simple, Smart, and Scalable Process
+          </h1>
+          <p className="mb-8 text-center max-w-xl text-white/90 font-normal text-md md:text-md">
+            We design, develop, and implement automation tools that help you work smarter, not harder
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 w-full gap-4 max-w-4xl">
+          {/* Process Card */}
+          <div className="w-full flex flex-col gap-3 h-80 col-span-1 bg-zinc-950 rounded-md border border-white/20 p-8 relative overflow-hidden">
+            <div className="text-white w-fit hover:bg-brand-strong box-border border font-medium rounded-[4px] text-xs px-2 py-1 border-white/20 backdrop-blur-md">
+              Step 4
+            </div>
+            <h1 className="text-xl text-left font-medium tracking-tighter text-heading md:text-2xl">
+              Continuous Optimization
+            </h1>
+            <p className="text-left text-white/70 font-medium text-sm md:text-sm">
+              We refine performance, analyze insights, and enhance automation for long-term growth.
+            </p>
+
+            {/* Items list */}
+            <div className="w-full flex flex-col rounded-md border border-white/10 overflow-hidden mt-2">
+
+              {/* Chatbot system */}
+              <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
+                <div className="flex items-center gap-3">
+                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '18px', fontVariationSettings: "'wght' 200" }}>chat</span>
+                  <div className="flex flex-col">
+                    <span className="text-white text-xs font-semibold">Chatbot system</span>
+                    <span className="text-white/40 text-xs">Efficiency will increase by 20%</span>
+                  </div>
+                </div>
+                <div className="w-7 h-7 rounded-full border border-purple-500/50 flex items-center justify-center">
+                  <span className="material-symbols-rounded text-purple-400" style={{ fontSize: '14px', fontVariationSettings: "'wght' 300" }}>refresh</span>
+                </div>
+              </div>
+
+              {/* Workflow system */}
+              <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
+                <div className="flex items-center gap-3">
+                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '18px', fontVariationSettings: "'wght' 200" }}>settings</span>
+                  <div className="flex flex-col">
+                    <span className="text-white text-xs font-semibold">Workflow system</span>
+                    <span className="text-white/40 text-xs">Update available.</span>
+                  </div>
+                </div>
+                <div className="w-7 h-7 rounded-full border border-white/20 flex items-center justify-center">
+                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '14px', fontVariationSettings: "'wght' 300" }}>arrow_upward</span>
+                </div>
+              </div>
+
+              {/* Sales system */}
+              <div className="flex items-center justify-between px-4 py-3">
+                <div className="flex items-center gap-3">
+                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '18px', fontVariationSettings: "'wght' 200" }}>filter_alt</span>
+                  <div className="flex flex-col">
+                    <span className="text-white text-xs font-semibold">Sales system</span>
+                    <span className="text-white/40 text-xs">Up to date</span>
+                  </div>
+                </div>
+                <div className="w-7 h-7 rounded-full border border-white/20 flex items-center justify-center">
+                  <span className="material-symbols-rounded text-green-400" style={{ fontSize: '14px', fontVariationSettings: "'wght' 300" }}>check</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
 
