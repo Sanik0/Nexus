@@ -201,7 +201,9 @@ export default function Home() {
             We design, develop, and implement automation tools that help you work smarter, not harder
           </p>
         </div>
-        <div className="flex items-center justfiy-center flex-col gap-5">
+
+        <div className="flex items-center justfiy-center flex-col gap-10">
+          {/* Service Card */}
           <section className="bg-neutral-primary">
             <div className="py-8 px-4 mx-auto max-w-5xl g:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
               <div className="flex flex-col justify-center">
@@ -247,7 +249,7 @@ export default function Home() {
                   <form action="" className="w-full">
                     <div className="w-full flex flex-col gap-3 border border-white/20 rounded-md focus:none p-3">
                       <div className="flex items-center justify-center">
-                        <input type="text" className="w-full text-xs text-white/40" value={'Hello, world!'} />
+                        <input type="text" className="w-full text-xs text-white/40" defaultValue={'Hello, world!'} />
                         <div className="w-fit border-white/20 border p-1 rounded-[3px] flex items-center justify-center">
                           <span className="material-symbols-rounded tet-red-600" style={{ fontSize: '15px', fontVariationSettings: "'wght' 100", color: '#DC2626' }}>send</span>
                         </div>
@@ -260,6 +262,204 @@ export default function Home() {
                   </form>
                 </div>
                 <div className="absolute right-0 left-0 bottom-0 h-40 bg-gradient-to-t from-zinc-950 to-transparent">
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Service Card */}
+          <section className="bg-neutral-primary">
+            <div className="py-8 px-4 mx-auto max-w-5xl g:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
+
+              {/* Mockup */}
+              <div className="w-full h-80 bg-zinc-950 rounded-2xl p-5 pb-0 md:p-10 md:pb-0 relative overflow-hidden">
+                <div className="w-full h-full bg-black rounded-xl border-white/20 border flex items-center justify-center flex-col gap-3 p-5">
+                  <div className="h-15 w-15 rounded-full border border-white/20 relatice overflow-hidden">
+                    <Plasma
+                      color="#DC2626"
+                      speed={0.6}
+                      direction="forward"
+                      scale={1.1}
+                      opacity={0.8}
+                      mouseInteractive={true}
+                    />
+                  </div>
+                  <h1 className="text-base text-center font-medium  tracking-tighter text-heading md:text-xl">
+                    What can i help you automate?
+                  </h1>
+                  <p className="text-center max-w-xl text-white/90 font-normal text-xs md:text-md">
+                    We design, develop, and implement automation tools that help you work smarter, not harder
+                  </p>
+                  <form action="" className="w-full">
+                    <div className="w-full flex flex-col gap-3 border border-white/20 rounded-md focus:none p-3">
+                      <div className="flex items-center justify-center">
+                        <input type="text" className="w-full text-xs text-white/40" defaultValue={'Hello, world!'} />
+                        <div className="w-fit border-white/20 border p-1 rounded-[3px] flex items-center justify-center">
+                          <span className="material-symbols-rounded tet-red-600" style={{ fontSize: '15px', fontVariationSettings: "'wght' 100", color: '#DC2626' }}>send</span>
+                        </div>
+                      </div>
+                      <div className="w-fit border-white/20 border p-1 px-2 flex gap-1 bg-zinc-950 rounded-full items-center justify-center" style={{ fontSize: '10px' }}>
+                        <span className="material-symbols-rounded tet-red-600" style={{ fontSize: '15px', fontVariationSettings: "'wght' 100", color: '#DC2626' }}>add</span>
+                        add documents
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div className="absolute right-0 left-0 bottom-0 h-40 bg-gradient-to-t from-zinc-950 to-transparent">
+                </div>
+              </div>
+
+
+              <div className="flex flex-col justify-center">
+                <div className="text-white hover:bg-brand-strong box-border border border-transparent font-medium w-fit mb-5 leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md">
+                  Workflow Automation
+                </div>
+                <h1 className=" text-2xl font-semibold mb-3 text-left tracking-tighter text-heading md:text-5xl lg:text-4xl">
+                  We invest in the world’s potential
+                </h1>
+                <p className="mb-6 text-white/80 font-medium text-left tracking-tighter text-heading md:text-base">
+                  Here at Flowbite we focus on markets where technology, innovation, and
+                  capital can unlock long-term value and drive economic growth.
+                </p>
+                <div className="flex flex-row gap-2">
+                  <div className="text-white hover:bg-brand-strong w-fit box-border border font-medium leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md">
+                    Internal Task Bots
+                  </div>
+                  <div className="text-white hover:bg-brand-strong w-fit box-border border font-medium leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md">
+                    Internal Task Bots
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          {/* Service Card */}
+          <section className="bg-neutral-primary">
+            <div className="py-8 px-4 mx-auto max-w-5xl g:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
+              <div className="flex flex-col justify-center">
+                <div className="text-white hover:bg-brand-strong box-border border border-transparent font-medium w-fit mb-5 leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md">
+                  Workflow Automation
+                </div>
+                <h1 className=" text-2xl font-semibold mb-3 text-left tracking-tighter text-heading md:text-5xl lg:text-4xl">
+                  We invest in the world’s potential
+                </h1>
+                <p className="mb-6 text-white/80 font-medium text-left tracking-tighter text-heading md:text-base">
+                  Here at Flowbite we focus on markets where technology, innovation, and
+                  capital can unlock long-term value and drive economic growth.
+                </p>
+                <div className="flex flex-row gap-2">
+                  <div className="text-white hover:bg-brand-strong w-fit box-border border font-medium leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md">
+                    Internal Task Bots
+                  </div>
+                  <div className="text-white hover:bg-brand-strong w-fit box-border border font-medium leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md">
+                    Internal Task Bots
+                  </div>
+                </div>
+              </div>
+
+              {/* Mockup */}
+              <div className="w-full h-80 bg-zinc-950 rounded-2xl p-5 pb-0 md:p-10 md:pb-0 relative overflow-hidden">
+                <div className="w-full h-full bg-black rounded-xl border-white/20 border flex items-center justify-center flex-col gap-3 p-5">
+                  <div className="h-15 w-15 rounded-full border border-white/20 relatice overflow-hidden">
+                    <Plasma
+                      color="#DC2626"
+                      speed={0.6}
+                      direction="forward"
+                      scale={1.1}
+                      opacity={0.8}
+                      mouseInteractive={true}
+                    />
+                  </div>
+                  <h1 className="text-base text-center font-medium  tracking-tighter text-heading md:text-xl">
+                    What can i help you automate?
+                  </h1>
+                  <p className="text-center max-w-xl text-white/90 font-normal text-xs md:text-md">
+                    We design, develop, and implement automation tools that help you work smarter, not harder
+                  </p>
+                  <form action="" className="w-full">
+                    <div className="w-full flex flex-col gap-3 border border-white/20 rounded-md focus:none p-3">
+                      <div className="flex items-center justify-center">
+                        <input type="text" className="w-full text-xs text-white/40" defaultValue={'Hello, world!'} />
+                        <div className="w-fit border-white/20 border p-1 rounded-[3px] flex items-center justify-center">
+                          <span className="material-symbols-rounded tet-red-600" style={{ fontSize: '15px', fontVariationSettings: "'wght' 100", color: '#DC2626' }}>send</span>
+                        </div>
+                      </div>
+                      <div className="w-fit border-white/20 border p-1 px-2 flex gap-1 bg-zinc-950 rounded-full items-center justify-center" style={{ fontSize: '10px' }}>
+                        <span className="material-symbols-rounded tet-red-600" style={{ fontSize: '15px', fontVariationSettings: "'wght' 100", color: '#DC2626' }}>add</span>
+                        add documents
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div className="absolute right-0 left-0 bottom-0 h-40 bg-gradient-to-t from-zinc-950 to-transparent">
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          {/* Service Card */}
+          <section className="bg-neutral-primary">
+            <div className="py-8 px-4 mx-auto max-w-5xl g:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
+
+              {/* Mockup */}
+              <div className="w-full h-80 bg-zinc-950 rounded-2xl p-5 pb-0 md:p-10 md:pb-0 relative overflow-hidden">
+                <div className="w-full h-full bg-black rounded-xl border-white/20 border flex items-center justify-center flex-col gap-3 p-5">
+                  <div className="h-15 w-15 rounded-full border border-white/20 relatice overflow-hidden">
+                    <Plasma
+                      color="#DC2626"
+                      speed={0.6}
+                      direction="forward"
+                      scale={1.1}
+                      opacity={0.8}
+                      mouseInteractive={true}
+                    />
+                  </div>
+                  <h1 className="text-base text-center font-medium  tracking-tighter text-heading md:text-xl">
+                    What can i help you automate?
+                  </h1>
+                  <p className="text-center max-w-xl text-white/90 font-normal text-xs md:text-md">
+                    We design, develop, and implement automation tools that help you work smarter, not harder
+                  </p>
+                  <form action="" className="w-full">
+                    <div className="w-full flex flex-col gap-3 border border-white/20 rounded-md focus:none p-3">
+                      <div className="flex items-center justify-center">
+                        <input type="text" className="w-full text-xs text-white/40" defaultValue={'Hello, world!'} />
+                        <div className="w-fit border-white/20 border p-1 rounded-[3px] flex items-center justify-center">
+                          <span className="material-symbols-rounded tet-red-600" style={{ fontSize: '15px', fontVariationSettings: "'wght' 100", color: '#DC2626' }}>send</span>
+                        </div>
+                      </div>
+                      <div className="w-fit border-white/20 border p-1 px-2 flex gap-1 bg-zinc-950 rounded-full items-center justify-center" style={{ fontSize: '10px' }}>
+                        <span className="material-symbols-rounded tet-red-600" style={{ fontSize: '15px', fontVariationSettings: "'wght' 100", color: '#DC2626' }}>add</span>
+                        add documents
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div className="absolute right-0 left-0 bottom-0 h-40 bg-gradient-to-t from-zinc-950 to-transparent">
+                </div>
+              </div>
+
+
+              <div className="flex flex-col justify-center">
+                <div className="text-white hover:bg-brand-strong box-border border border-transparent font-medium w-fit mb-5 leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md">
+                  Workflow Automation
+                </div>
+                <h1 className=" text-2xl font-semibold mb-3 text-left tracking-tighter text-heading md:text-5xl lg:text-4xl">
+                  We invest in the world’s potential
+                </h1>
+                <p className="mb-6 text-white/80 font-medium text-left tracking-tighter text-heading md:text-base">
+                  Here at Flowbite we focus on markets where technology, innovation, and
+                  capital can unlock long-term value and drive economic growth.
+                </p>
+                <div className="flex flex-row gap-2">
+                  <div className="text-white hover:bg-brand-strong w-fit box-border border font-medium leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md">
+                    Internal Task Bots
+                  </div>
+                  <div className="text-white hover:bg-brand-strong w-fit box-border border font-medium leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md">
+                    Internal Task Bots
+                  </div>
                 </div>
               </div>
             </div>
