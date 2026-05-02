@@ -227,7 +227,17 @@ export default function Home() {
 
               {/* Mockup */}
               <div className="w-full h-80 bg-zinc-950 rounded-2xl p-5 pb-0 md:p-10 md:pb-0 relative overflow-hidden">
-                <div className="w-full h-full bg-black rounded-xl border-white/20 border flex flex-col gap-3 p-5">
+                <div className="w-full h-full bg-black rounded-xl border-white/20 border flex items-center justify-center flex-col gap-3 p-5">
+                  <div className="h-15 w-15 rounded-full border border-white/20 relatice overflow-hidden">
+                    <Plasma
+                      color="#DC2626"
+                      speed={0.6}
+                      direction="forward"
+                      scale={1.1}
+                      opacity={0.8}
+                      mouseInteractive={true}
+                    />
+                  </div>
                   <h1 className="text-base text-center font-medium  tracking-tighter text-heading md:text-xl">
                     What can i help you automate?
                   </h1>
