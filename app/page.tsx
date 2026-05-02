@@ -188,6 +188,65 @@ export default function Home() {
         />
       </div>
 
+      {/* Services Section */}
+      <div className="w-full py-40 flex flex-col gap-10 px-6 items-center justify-center relative">
+        <div className="text-white hover:bg-brand-strong box-border border border-transparent font-medium leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md" >
+          Our Services
+        </div>
+        <div className="w-full max-w-4xl flex items-center justify-center gap-2 flex-col">
+          <h1 className="mb-6 text-2xl text-center font-medium leading-5 md:leading-15 tracking-tighter text-heading md:text-5xl">
+            AI Solutions That Take Your Business to the Next Level
+          </h1>
+          <p className="mb-8 text-center max-w-xl text-white/90 font-normal text-md md:text-md">
+            We design, develop, and implement automation tools that help you work smarter, not harder
+          </p>
+        </div>
+        <div className="flex items-center justfiy-center flex-col gap-5">
+          <section className="bg-neutral-primary">
+            <div className="py-8 px-4 mx-auto max-w-5xl g:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
+              <div className="flex flex-col justify-center">
+                <div className="text-white hover:bg-brand-strong box-border border border-transparent font-medium w-fit mb-5 leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md">
+                  Workflow Automation
+                </div>
+                <h1 className=" text-lg font-semibold mb-3 text-left tracking-tighter text-heading md:text-5xl lg:text-4xl">
+                  We invest in the world’s potential
+                </h1>
+                <p className="mb-6 text-white/80 font-medium text-left tracking-tighter text-heading md:text-base">
+                  Here at Flowbite we focus on markets where technology, innovation, and
+                  capital can unlock long-term value and drive economic growth.
+                </p>
+                <div className="flex flex-row gap-2">
+                  <div className="text-white hover:bg-brand-strong w-fit box-border border font-medium leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md">
+                    Internal Task Bots
+                  </div>
+                  <div className="text-white hover:bg-brand-strong w-fit box-border border font-medium leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md">
+                    Internal Task Bots
+                  </div>
+                </div>
+              </div>
+
+              {/* Mockup */}
+              <div className="w-full h-80 bg-zinc-950 rounded-2xl p-10 pb-0 relative overflow-hidden">
+                <div className="w-full h-full bg-black rounded-xl border-white/20 border flex flex-col gap-3 p-5">
+                  <h1 className="text-base text-center font-medium  tracking-tighter text-heading md:text-xl">
+                    What can i help you automate?
+                  </h1>
+                  <p className="text-center max-w-xl text-white/90 font-normal text-xs md:text-md">
+                    We design, develop, and implement automation tools that help you work smarter, not harder
+                  </p>
+                  <form action="" className="w-full">
+                    <input type="text" className="w-full border border-white/20 rounded-md focus:none" />
+                  </form>
+                </div>
+                <div className="absolute right-0 left-0 bottom-0 h-40 bg-gradient-to-t from-zinc-950 to-transparent">
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+
     </div>
 
 
