@@ -751,10 +751,14 @@ export default function Home() {
             <CarouselContent className="w-full">
               {Array.from({ length: 5 }).map((_, index) => (
                 <CarouselItem className="w-full" key={index}>
-                  <div className="p-1 bg-red-900">
+                  <div className="bg-red-900">
                     <div>
-                      <div className="flex h-50 items-center justify-center p-6">
-                        <span className="text-4xl font-semibold">{index + 1}</span>
+                      <div className="flex items-center justify-center">
+                        <span className="w-full flex">
+                          <div className="overflow-hidden rounded-lg">
+                            <img className="object-cover" src="https://picsum.photos/450/450" alt="" />
+                          </div>
+                        </span>
                       </div>
                     </div>
                   </div>
