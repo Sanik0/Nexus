@@ -201,7 +201,7 @@ export default function Home() {
           Our Services
         </div>
         <div className="w-full max-w-4xl flex items-center justify-center gap-2 flex-col">
-          <h1 className="mb-6 text-4xl text-center font-medium leading-10 md:leading-15 tracking-tighter text-heading md:text-5xl">
+          <h1 className="text-3xl text-center font-medium leading-10 md:leading-15 tracking-tighter text-heading md:text-5xl">
             AI Solutions That Take Your Business to the Next Level
           </h1>
           <p className="mb-8 text-center max-w-xl text-white/90 font-normal text-md md:text-md">
@@ -481,7 +481,7 @@ export default function Home() {
           Our Process
         </div>
         <div className="w-full max-w-4xl flex items-center justify-center gap-2 flex-col">
-          <h1 className="mb-6 text-4xl text-center font-medium leading-10 md:leading-15 tracking-tighter text-heading md:text-5xl">
+          <h1 className="text-3xl text-center max-w-xl font-medium leading-10 md:leading-15 tracking-tighter text-heading md:text-5xl">
             Our Simple, Smart, and Scalable Process
           </h1>
           <p className="mb-8 text-center max-w-xl text-white/90 font-normal text-md md:text-md">
@@ -738,7 +738,7 @@ export default function Home() {
           Case Studies
         </div>
         <div className="w-full max-w-4xl flex items-center justify-center gap-2 flex-col">
-          <h1 className="mb-6 text-4xl text-center font-medium leading-10 md:leading-15 tracking-tighter text-heading md:text-5xl">
+          <h1 className="text-3xl text-center font-medium leading-10 md:leading-15 tracking-tighter text-heading md:text-5xl">
             See How Smart AI Automation Transforms Businesses
           </h1>
           <p className="mb-8 text-center max-w-xl text-white/90 font-normal text-md md:text-md">
@@ -782,6 +782,104 @@ export default function Home() {
           <p className="w-full text-center font-medium text-md mt-5 text-white/70">←  DRAG TO EXPLORE  →</p>
         </div>
       </div>
+
+      {/* Gird Section */}
+      <section className="w-full py-20 px-4 md:px-8">
+        <div className="max-w-6xl mx-auto">
+
+          {/* Header */}
+          <div className="flex flex-col w-full items-center justify-center">
+            <div className="text-white mb-10 w-fit hover:bg-brand-strong box-border border font-medium leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md" >
+              Benefits
+            </div>
+            <div className="w-full max-w-4xl flex items-center justify-center gap-2 flex-col">
+              <h1 className="text-3xl text-center font-medium leading-10 md:leading-15 tracking-tighter text-heading md:text-5xl">
+                The Key Benefits of AI for Your Business Growth
+              </h1>
+              <p className="mb-8 text-center max-w-xl text-white/90 font-normal text-md md:text-md">
+                Discover how AI automation enhances efficiency, reduces costs, and drives business growth with smarter, faster processes.
+              </p>
+            </div>
+          </div>
+
+          {/* Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+            {/* Card 1 */}
+            <div className="flex flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
+              <div className="w-9 h-9 rounded-full flex items-center justify-center">
+                <span className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'wght' 300" }}>key</span>
+              </div>
+              <div className="flex flex-col gap-2">
+                <h3 className="text-lg font-semibold">True Self-Custody</h3>
+                <p className="text-sm text-white/60 leading-relaxed">Your private keys are generated and stored only on your device. Nexus has zero access. Zero.</p>
+              </div>
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-18 bg-red-600/40 blur-2xl rounded-full" />
+            </div>
+
+            {/* Card 2 */}
+            <div className="flex flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
+              <div className="w-9 h-9 rounded-full flex items-center justify-center">
+                <span className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'wght' 300" }}>lan</span>
+              </div>
+              <div className="flex flex-col gap-2">
+                <h3 className="text-lg font-semibold">Multi-Chain Native</h3>
+                <p className="text-sm text-white/60 leading-relaxed">Ethereum, Solana, Bitcoin, BNB Chain, Polygon, Arbitrum — manage everything in one place.</p>
+              </div>
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-18 bg-red-600/40 blur-2xl rounded-full" />
+            </div>
+
+            {/* Card 3 */}
+            <div className="flex flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
+              <div className="w-9 h-9 rounded-full flex items-center justify-center">
+                <span className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'wght' 300" }}>swap_horiz</span>
+              </div>
+              <div className="flex flex-col gap-2">
+                <h3 className="text-lg font-semibold">Built-In DEX Swap</h3>
+                <p className="text-sm text-white/60 leading-relaxed">Swap tokens directly inside your wallet at the best rates across 15+ decentralized exchanges. No account needed.</p>
+              </div>
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-18 bg-red-600/40 blur-2xl rounded-full" />
+            </div>
+
+            {/* Card 4 */}
+            <div className="flex flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
+              <div className="w-9 h-9 rounded-full flex items-center justify-center">
+                <span className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'wght' 300" }}>shield</span>
+              </div>
+              <div className="flex flex-col gap-2">
+                <h3 className="text-lg font-semibold">256-bit Encryption</h3>
+                <p className="text-sm text-white/60 leading-relaxed">Military-grade AES encryption protects your wallet locally. No cloud. No exposure. No compromise.</p>
+              </div>
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-18 bg-red-600/40 blur-2xl rounded-full" />
+            </div>
+
+            {/* Card 5 */}
+            <div className="flex flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
+              <div className="w-9 h-9 rounded-full flex items-center justify-center">
+                <span className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'wght' 300" }}>bar_chart</span>
+              </div>
+              <div className="flex flex-col gap-2">
+                <h3 className="text-lg font-semibold">Portfolio Tracker</h3>
+                <p className="text-sm text-white/60 leading-relaxed">Track your entire crypto portfolio across all chains in real-time. P&L, history, and insights in one dashboard.</p>
+              </div>
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-18 bg-red-600/40 blur-2xl rounded-full" />
+            </div>
+
+            {/* Card 6 */}
+            <div className="flex flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
+              <div className="w-9 h-9 rounded-full flex items-center justify-center">
+                <span className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'wght' 300" }}>usb</span>
+              </div>
+              <div className="flex flex-col gap-2">
+                <h3 className="text-lg font-semibold">Hardware Wallet Bridge</h3>
+                <p className="text-sm text-white/60 leading-relaxed">Pair with Ledger or Trezor in seconds for cold storage without ever leaving the Nexus interface.</p>
+              </div>
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-18 bg-red-600/40 blur-2xl rounded-full" />
+            </div>
+
+          </div>
+        </div>
+      </section>
 
     </div>
 
