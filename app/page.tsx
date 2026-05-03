@@ -751,12 +751,27 @@ export default function Home() {
             <CarouselContent className="w-full">
               {Array.from({ length: 5 }).map((_, index) => (
                 <CarouselItem className="w-full" key={index}>
-                  <div className="bg-red-900">
+                  <div className="">
                     <div>
                       <div className="flex items-center justify-center">
-                        <span className="w-full flex">
-                          <div className="overflow-hidden rounded-lg">
+                        <span className="w-full flex gap-10 items-center justify-start">
+                          <div className="overflow-hidden rounded-lg w-full">
                             <img className="object-cover" src="https://picsum.photos/450/450" alt="" />
+                          </div>
+                          <div className="w-full flex flex-col gap-4">
+                            <span className="text-2xl font-medium">Logo Ipsum</span>
+                            <div className="flex flex-col gap-2">
+                              <h1 className="text-xl font-medium">"Ai-Driven Faster Forcasting cut inventory waste by 40% for Trailforge"</h1>
+                              <p className="text-[14px] text-white/80">Trailforge, a Suitcase brand, faced stock merket issues and inefficiencies. By implementing AI-driven forecasting, they reduced inventory waste by 40% and improved demand planning.</p>
+                            </div>
+                            <p className="text-md text-white">Impact:</p>
+                            <ul className="list-disc list-inside pl-4 text-[16px]">
+                              <li>40% Less Inventory Waste</li>
+                              <li>35% Faster Production</li>
+                              <li>20% More accurate forecasting</li>
+                              <li>25% Faster Fullfilment</li>
+                            </ul>
+
                           </div>
                         </span>
                       </div>
