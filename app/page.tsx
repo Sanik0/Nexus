@@ -881,6 +881,120 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section className="bg-black">
+        <div className="py-16 px-4 mx-auto max-w-screen-xl lg:py-24 lg:px-6">
+
+          {/* Header */}
+          <div className="flex flex-col w-full items-center justify-center mb-12">
+            <div className="text-white mb-4 w-fit border font-medium rounded-[4px] text-xs px-2 py-1 border-white/20">
+              Pricing
+            </div>
+            <h1 className="text-3xl text-center font-medium tracking-tighter text-white md:text-5xl mb-3">
+              The Right Plan for Every Holder
+            </h1>
+            <p className="text-center max-w-xl text-white/50 text-sm">
+              Start free, scale when ready. No hidden fees, no surprises.
+            </p>
+          </div>
+
+          {/* Cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+            {/* Starter */}
+            <div className="flex flex-col p-6 bg-black rounded-lg border border-white/10 relative overflow-hidden">
+              {/* Glow */}
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-red-600/40 blur-3xl rounded-full pointer-events-none" />
+              <div className="flex items-center gap-2 mb-6">
+                <span className="material-symbols-rounded text-white/60" style={{ fontSize: '20px', fontVariationSettings: "'wght' 300" }}>rocket_launch</span>
+                <h3 className="text-lg font-semibold text-white">Core</h3>
+              </div>
+              <div className="flex items-baseline gap-1 mb-2">
+                <span className="text-4xl font-medium text-white">Free</span>
+              </div>
+              <p className="text-white/90 text-sm mb-6">
+                Perfect for crypto newcomers getting started with self-custody.
+              </p>
+              <a href="#" className="w-full text-center text-white font-medium text-sm py-2 rounded-lg border bg-white/5 border-white/20 transition mb-8">
+                Get Started
+              </a>
+              <p className="text-white/40 text-xs mb-4">What's Included:</p>
+              <ul className="space-y-3">
+                {["1 Wallet", "5 Supported Chains", "Built-In DEX Swap", "Basic Portfolio Tracker", "Biometric Unlock"].map((f) => (
+                  <li key={f} className="flex items-center gap-3 text-sm text-white/70">
+                    <span className="material-symbols-rounded text-white/40" style={{ fontSize: '16px', fontVariationSettings: "'wght' 300" }}>check</span>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Pro - highlighted */}
+            <div className="flex flex-col p-6 bg-black rounded-lg border border-white/10 relative overflow-hidden">
+              {/* Glow */}
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-red-600/40 blur-3xl rounded-full pointer-events-none" />
+              {/* Popular badge */}
+              <div className="absolute top-4 right-4 text-xs font-medium px-2 py-1 rounded-sm text-white border border-white/10">
+                Popular
+              </div>
+              <div className="flex items-center gap-2 mb-6">
+                <span className="material-symbols-rounded text-red-500" style={{ fontSize: '20px', fontVariationSettings: "'wght' 300" }}>bolt</span>
+                <h3 className="text-lg font-semibold text-white">Pro</h3>
+              </div>
+              <div className="flex items-baseline gap-1 mb-2">
+                <span className="text-4xl font-bold text-white">$9</span>
+                <span className="tex-white text-sm">/month</span>
+              </div>
+              <p className="text-white/90 text-sm mb-6">
+                For active traders who need multi-chain power and better rates.
+              </p>
+              <a href="#" className="w-full text-center text-white font-medium text-sm py-2 rounded-lg bg-red-600 hover:bg-red-700 transition mb-8">
+                Choose this plan
+              </a>
+              <p className="text-white/40 text-xs mb-4">What's Included:</p>
+              <ul className="space-y-3">
+                {["Unlimited Wallets", "20+ Supported Chains", "DEX Swap + Best Rate Alerts", "Advanced Portfolio + P&L", "Hardware Wallet Bridge", "Priority Support"].map((f) => (
+                  <li key={f} className="flex items-center gap-3 text-sm text-white/70">
+                    <span className="material-symbols-rounded text-red-500" style={{ fontSize: '16px', fontVariationSettings: "'wght' 300" }}>check</span>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Enterprise */}
+            <div className="flex flex-col p-6 bg-black rounded-lg border border-white/10 relative overflow-hidden">
+              {/* Glow */}
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-red-600/40 blur-3xl rounded-full pointer-events-none" />
+              <div className="flex items-center gap-2 mb-6">
+                <span className="material-symbols-rounded text-white/60" style={{ fontSize: '20px', fontVariationSettings: "'wght' 300" }}>workspace_premium</span>
+                <h3 className="text-lg font-semibold text-white">Sovereign</h3>
+              </div>
+              <div className="flex items-baseline gap-1 mb-2">
+                <span className="text-4xl font-bold text-white">$29</span>
+                <span className="text-white text-sm">/month</span>
+              </div>
+              <p className="text-white/40 text-sm mb-6">
+                For institutions and power users who demand total control.
+              </p>
+              <a href="#" className="w-full text-center text-white font-medium text-sm py-2 rounded-lg border border-white/20 hover:bg-white/5 transition mb-8">
+                Schedule a call
+              </a>
+              <p className="text-white/40 text-xs mb-4">What's Included:</p>
+              <ul className="space-y-3">
+                {["Everything in Pro", "All Chains + Early Access", "Zero Swap Fees", "Institutional Portfolio Grade", "Dedicated Security Advisor", "White-Glove Onboarding", "1-Year Storage Archive"].map((f) => (
+                  <li key={f} className="flex items-center gap-3 text-sm text-white/70">
+                    <span className="material-symbols-rounded text-white/40" style={{ fontSize: '16px', fontVariationSettings: "'wght' 300" }}>check</span>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
     </div>
 
 
