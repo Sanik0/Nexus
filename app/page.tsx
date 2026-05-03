@@ -746,43 +746,40 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid w-full gap-7 max-w-4xl">
-          <Carousel className="w-full">
-            <CarouselContent className="w-full">
+        <div className="grid w-full  gap-7 max-w-4xl">
+          <Carousel className="w-full overflow-hidden">
+            <CarouselContent>
               {Array.from({ length: 5 }).map((_, index) => (
-                <CarouselItem className="w-full" key={index}>
-                  <div className="">
-                    <div>
-                      <div className="flex items-center justify-center">
-                        <span className="w-full flex gap-10 items-center justify-start">
-                          <div className="overflow-hidden rounded-lg w-full">
-                            <img className="object-cover" src="https://picsum.photos/450/450" alt="" />
-                          </div>
-                          <div className="w-full flex flex-col gap-4">
-                            <span className="text-2xl font-medium">Logo Ipsum</span>
-                            <div className="flex flex-col gap-2">
-                              <h1 className="text-xl font-medium">"Ai-Driven Faster Forcasting cut inventory waste by 40% for Trailforge"</h1>
-                              <p className="text-[14px] text-white/80">Trailforge, a Suitcase brand, faced stock merket issues and inefficiencies. By implementing AI-driven forecasting, they reduced inventory waste by 40% and improved demand planning.</p>
-                            </div>
-                            <p className="text-md text-white">Impact:</p>
-                            <ul className="list-disc list-inside pl-4 text-[16px]">
-                              <li>40% Less Inventory Waste</li>
-                              <li>35% Faster Production</li>
-                              <li>20% More accurate forecasting</li>
-                              <li>25% Faster Fullfilment</li>
-                            </ul>
+                <CarouselItem key={index}>
+                  <div className="flex flex-col md:flex-row items-center justify-start gap-6 md:gap-10 p-2">
 
-                          </div>
-                        </span>
-                      </div>
+                    {/* Image */}
+                    <div className="overflow-hidden rounded-lg w-full md:w-1/2 shrink-0 bg-red-600 h-[300px] md:h-[450px]">
+                      <img className="w-full h-full object-cover" src="https://picsum.photos/id/26/200/300" alt="" />
                     </div>
+
+                    {/* Text */}
+                    <div className="w-full flex flex-col gap-4">
+                      <span className="text-2xl font-medium">Logo Ipsum</span>
+                      <div className="flex flex-col gap-2">
+                        <h1 className="text-xl font-medium">"Ai-Driven Faster Forecasting cut inventory waste by 40% for Trailforge"</h1>
+                        <p className="text-[14px] text-white/80">Trailforge, a Suitcase brand, faced stock market issues and inefficiencies. By implementing AI-driven forecasting, they reduced inventory waste by 40% and improved demand planning.</p>
+                      </div>
+                      <p className="text-md text-white">Impact:</p>
+                      <ul className="list-disc list-inside pl-4 text-[16px]">
+                        <li>40% Less Inventory Waste</li>
+                        <li>35% Faster Production</li>
+                        <li>20% More accurate forecasting</li>
+                        <li>25% Faster Fulfillment</li>
+                      </ul>
+                    </div>
+
                   </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
           </Carousel>
+          <p className="w-full text-center font-medium text-md mt-5 text-white/70">←  DRAG TO EXPLORE  →</p>
         </div>
       </div>
 
