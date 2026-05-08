@@ -995,6 +995,118 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <section className="bg-black py-16 px-4 lg:px-6">
+        <div className="mx-auto max-w-5xl">
+
+          {/* Header */}
+          <div className="flex flex-col items-center justify-center mb-12">
+            <div className="text-white mb-4 w-fit border font-medium rounded-[4px] text-xs px-2 py-1 border-white/20">
+              Testimonials
+            </div>
+            <h2 className="text-3xl text-center font-medium tracking-tighter text-white md:text-5xl mb-3">
+              Trusted by real holders
+            </h2>
+            <p className="text-center max-w-xl text-white/50 text-sm">
+              Don't take our word for it. Here's what our community says.
+            </p>
+          </div>
+
+          {/* Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            {/* Card 1 */}
+            <div className="flex flex-col gap-4 p-6 bg-zinc-950 rounded-xl border border-white/10 relative overflow-hidden">
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-24 bg-red-600/10 blur-3xl rounded-full pointer-events-none" />
+              <div className="flex gap-1">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <span key={i} className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'FILL' 1, 'wght' 400" }}>star</span>
+                ))}
+              </div>
+              <p className="text-white/80 text-sm leading-relaxed">
+                "After FTX collapsed, I moved everything to Nexus. I sleep better knowing I hold my own keys and no corporation can freeze my funds."
+              </p>
+              <div className="flex items-center gap-3 mt-2">
+                <div className="w-10 h-10 rounded-full bg-zinc-800 border border-white/10 flex items-center justify-center text-white font-semibold text-sm shrink-0">
+                  JR
+                </div>
+                <div>
+                  <p className="text-white text-sm font-semibold">James R.</p>
+                  <p className="text-white/40 text-xs">Crypto Trader · New York</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="flex flex-col gap-4 p-6 bg-zinc-950 rounded-xl border border-white/10 relative overflow-hidden">
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-24 bg-red-600/10 blur-3xl rounded-full pointer-events-none" />
+              <div className="flex gap-1">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <span key={i} className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'FILL' 1, 'wght' 400" }}>star</span>
+                ))}
+              </div>
+              <p className="text-white/80 text-sm leading-relaxed">
+                "The multi-chain support is unreal. I manage ETH, SOL, and BTC all in one clean interface. Nothing else I've tried even comes close."
+              </p>
+              <div className="flex items-center gap-3 mt-2">
+                <div className="w-10 h-10 rounded-full bg-zinc-800 border border-white/10 flex items-center justify-center text-white font-semibold text-sm shrink-0">
+                  YT
+                </div>
+                <div>
+                  <p className="text-white text-sm font-semibold">Yuki T.</p>
+                  <p className="text-white/40 text-xs">DeFi Investor · Tokyo</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="flex flex-col gap-4 p-6 bg-zinc-950 rounded-xl border border-white/10 relative overflow-hidden">
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-24 bg-red-600/10 blur-3xl rounded-full pointer-events-none" />
+              <div className="flex gap-1">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <span key={i} className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'FILL' 1, 'wght' 400" }}>star</span>
+                ))}
+              </div>
+              <p className="text-white/80 text-sm leading-relaxed">
+                "The DEX aggregator consistently finds rates I can't find anywhere else. Saved me hundreds in fees just last month alone."
+              </p>
+              <div className="flex items-center gap-3 mt-2">
+                <div className="w-10 h-10 rounded-full bg-zinc-800 border border-white/10 flex items-center justify-center text-white font-semibold text-sm shrink-0">
+                  RV
+                </div>
+                <div>
+                  <p className="text-white text-sm font-semibold">Rina V.</p>
+                  <p className="text-white/40 text-xs">DeFi Developer · Berlin</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 4 */}
+            <div className="flex flex-col gap-4 p-6 bg-zinc-950 rounded-xl border border-white/10 relative overflow-hidden">
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-24 bg-red-600/10 blur-3xl rounded-full pointer-events-none" />
+              <div className="flex gap-1">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <span key={i} className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'FILL' 1, 'wght' 400" }}>star</span>
+                ))}
+              </div>
+              <p className="text-white/80 text-sm leading-relaxed">
+                "Privacy-first was the deciding factor for me. No KYC, no cloud, no one watching my portfolio. Nexus is the only wallet I trust."
+              </p>
+              <div className="flex items-center gap-3 mt-2">
+                <div className="w-10 h-10 rounded-full bg-zinc-800 border border-white/10 flex items-center justify-center text-white font-semibold text-sm shrink-0">
+                  PM
+                </div>
+                <div>
+                  <p className="text-white text-sm font-semibold">Dr. Priya M.</p>
+                  <p className="text-white/40 text-xs">Privacy Advocate · San Francisco</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
     </div>
 
 
