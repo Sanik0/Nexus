@@ -1017,7 +1017,7 @@ export default function Home() {
 
             {/* Card 1 */}
             <div className="flex flex-col gap-4 p-6 bg-zinc-950 rounded-xl border border-white/10 relative overflow-hidden">
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-24 bg-red-600/10 blur-3xl rounded-full pointer-events-none" />
+              <div className="absolute bottom-0 right-0 -translate-x-1/2 w-full h-24 bg-red-600/80 blur-3xl rounded-full pointer-events-none" />
               <div className="flex gap-1">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <span key={i} className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'FILL' 1, 'wght' 400" }}>star</span>
@@ -1039,7 +1039,7 @@ export default function Home() {
 
             {/* Card 2 */}
             <div className="flex flex-col gap-4 p-6 bg-zinc-950 rounded-xl border border-white/10 relative overflow-hidden">
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-24 bg-red-600/10 blur-3xl rounded-full pointer-events-none" />
+              <div className="absolute bottom-0 right-0 -translate-x-1/2 w-full h-24 bg-red-600/80 blur-3xl rounded-full pointer-events-none" />
               <div className="flex gap-1">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <span key={i} className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'FILL' 1, 'wght' 400" }}>star</span>
@@ -1061,7 +1061,7 @@ export default function Home() {
 
             {/* Card 3 */}
             <div className="flex flex-col gap-4 p-6 bg-zinc-950 rounded-xl border border-white/10 relative overflow-hidden">
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-24 bg-red-600/10 blur-3xl rounded-full pointer-events-none" />
+              <div className="absolute bottom-0 right-0 -translate-x-1/2 w-full h-24 bg-red-600/80 blur-3xl rounded-full pointer-events-none" />
               <div className="flex gap-1">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <span key={i} className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'FILL' 1, 'wght' 400" }}>star</span>
@@ -1083,7 +1083,7 @@ export default function Home() {
 
             {/* Card 4 */}
             <div className="flex flex-col gap-4 p-6 bg-zinc-950 rounded-xl border border-white/10 relative overflow-hidden">
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-24 bg-red-600/10 blur-3xl rounded-full pointer-events-none" />
+              <div className="absolute bottom-0 right-0 -translate-x-1/2 w-full h-24 bg-red-600/80 blur-3xl rounded-full pointer-events-none" />
               <div className="flex gap-1">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <span key={i} className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'FILL' 1, 'wght' 400" }}>star</span>
