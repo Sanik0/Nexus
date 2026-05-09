@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/carousel"
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from "react-icons/si";
 import AnimatedContent from "@/components/AnimatedContent";
+import FadeContent from "@/components/FadeContent";
 
 // LogoLoop
 const techLogos = [
@@ -127,34 +128,36 @@ export default function Home() {
         </div>
         <section className=" pt-20 mb-40">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
-            <div
-              className="w-auto inline-flex items-center p-1 pe-2 mb-6 text-sm text-fg-brand-strong rounded-full border border-white/20"
-              role="alert"
-            >
-              <span className="bg-red-600 text-fg-brand-strong py-0.5 px-2 rounded-full">
-                New
-              </span>
-              <div className="ms-2 text-sm">
-                Crypto wallet savings
-              </div>
-              <svg
-                className="w-4 h-4 ms-1"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width={24}
-                height={24}
-                fill="none"
-                viewBox="0 0 24 24"
+            <FadeContent blur={true} duration={2500} easing="ease-out" initialOpacity={0}>
+              <div
+                className="w-auto inline-flex items-center p-1 pe-2 mb-6 text-sm text-fg-brand-strong rounded-full border border-white/20"
+                role="alert"
               >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="m9 5 7 7-7 7"
-                />
-              </svg>
-            </div>
+                <span className="bg-red-600 text-fg-brand-strong py-0.5 px-2 rounded-full">
+                  New
+                </span>
+                <div className="ms-2 text-sm">
+                  Crypto wallet savings
+                </div>
+                <svg
+                  className="w-4 h-4 ms-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={24}
+                  height={24}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="m9 5 7 7-7 7"
+                  />
+                </svg>
+              </div>
+            </FadeContent>
             <div className="w-full">
               <BlurText
                 className="mb-6 max-w-4xl flex flex-row flex-wrap items-center justify-center text-center mx-auto text-4xl font-semibold leading-10 md:leading-20 tracking-tighter text-heading md:text-5xl lg:text-6xl"
