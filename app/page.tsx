@@ -555,259 +555,170 @@ export default function Home() {
       </div>
 
       {/* Process section */}
-      <div className="w-full py-40 pt-0 flex flex-col gap-10 px-6 items-center justify-center relative">
-        <div className="text-white hover:bg-brand-strong box-border border font-medium leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md" >
-          Our Process
+      <div className="w-full py-20 flex flex-col gap-10 px-6 items-center justify-center relative">
+
+        <div className="text-white border font-medium rounded-[4px] text-xs px-2 py-1 border-white/20">
+          How It Works
         </div>
+
         <div className="w-full max-w-4xl flex items-center justify-center gap-2 flex-col">
-          <h1 className="text-3xl text-center max-w-xl font-medium leading-10 md:leading-15 tracking-tighter text-heading md:text-5xl">
-            Our Simple, Smart, and Scalable Process
+          <h1 className="text-3xl text-center max-w-xl font-medium leading-10 md:leading-15 tracking-tighter text-white md:text-5xl">
+            Set up in minutes. Secure for life.
           </h1>
-          <p className="mb-8 text-center max-w-xl text-white/90 font-normal text-md md:text-md">
-            We design, develop, and implement automation tools that help you work smarter, not harder
+          <p className="text-center max-w-xl text-white/50 font-normal text-sm">
+            Getting started with Nexus is simple. No bank. No KYC. No waiting.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-7 max-w-4xl">
-          {/* Process Card */}
-          <div className="w-full flex flex-col gap-3 bg-zinc-950 rounded-md border border-white/20 p-8 relative overflow-hidden">
-            <div className="text-white w-fit hover:bg-brand-strong box-border border font-medium rounded-[4px] text-xs px-2 py-1 border-white/20 backdrop-blur-md">
-              Step 4
-            </div>
-            <h1 className="text-xl text-left font-medium tracking-tighter text-heading md:text-2xl">
-              Continuous Optimization
-            </h1>
-            <p className="text-left text-white/70 font-medium text-sm md:text-sm">
-              We refine performance, analyze insights, and enhance automation for long-term growth.
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-6 max-w-4xl">
+
+          {/* Step 1 - Pie chart style mockup */}
+          <div className="w-full flex flex-col gap-3 bg-zinc-950 rounded-xl border border-white/10 p-6 relative overflow-hidden">
+            <div className="text-white w-fit border font-medium rounded-[4px] text-xs px-2 py-1 border-white/20">Step 1</div>
+            <h3 className="text-2xl font-medium tracking-tighter text-white">Download & Install</h3>
+            <p className="text-white/50 text-sm leading-relaxed">
+              Get Nexus on iOS, Android, or as a Chrome extension. Free forever, no account required.
             </p>
 
-            {/* Items list */}
-            <div className="w-full flex flex-col rounded-md border border-white/10 overflow-hidden mt-2">
-
-              {/* Chatbot system */}
-              <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
-                <div className="flex items-center gap-3">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '18px', fontVariationSettings: "'wght' 200" }}>chat</span>
-                  <div className="flex flex-col">
-                    <span className="text-white text-xs font-semibold">Chatbot system</span>
-                    <span className="text-white/40 text-xs">Efficiency will increase by 20%</span>
+            {/* Mockup: two-column layout like step 1 in screenshot */}
+            <div className="w-full flex gap-3 mt-2 rounded-lg overflow-hidden border border-white/10">
+              {/* Left: visual */}
+              <div className="flex-1 bg-black flex items-center justify-center p-4 min-h-32">
+                <div className="relative w-20 h-20">
+                  <svg viewBox="0 0 80 80" className="w-full h-full -rotate-90">
+                    <circle cx="40" cy="40" r="30" fill="none" stroke="#ffffff10" strokeWidth="10" />
+                    <circle cx="40" cy="40" r="30" fill="none" stroke="#DC2626" strokeWidth="10"
+                      strokeDasharray="75 113" strokeLinecap="round" />
+                    <circle cx="40" cy="40" r="30" fill="none" stroke="#DC262660" strokeWidth="10"
+                      strokeDasharray="30 158" strokeDashoffset="-75" strokeLinecap="round" />
+                  </svg>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <span className="text-white text-xs font-semibold">98%</span>
                   </div>
                 </div>
-                <div className="w-7 h-7 rounded-full border border-purple-500/50 flex items-center justify-center">
-                  <span className="material-symbols-rounded text-purple-400" style={{ fontSize: '14px', fontVariationSettings: "'wght' 300" }}>refresh</span>
-                </div>
+                <p className="text-white/30 text-[10px] absolute bottom-3 left-4">Scanning devices...</p>
               </div>
-
-              {/* Workflow system */}
-              <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
-                <div className="flex items-center gap-3">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '18px', fontVariationSettings: "'wght' 200" }}>settings</span>
-                  <div className="flex flex-col">
-                    <span className="text-white text-xs font-semibold">Workflow system</span>
-                    <span className="text-white/40 text-xs">Update available.</span>
+              {/* Right: checklist */}
+              <div className="flex-1 bg-zinc-900/50 flex flex-col divide-y divide-white/5">
+                {[
+                  { icon: "phone_iphone", label: "iOS App" },
+                  { icon: "android", label: "Android" },
+                  { icon: "extension", label: "Chrome" },
+                  { icon: "desktop_windows", label: "macOS Beta" },
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-2 px-3 py-2.5">
+                    <span className="material-symbols-rounded text-white/40" style={{ fontSize: '14px', fontVariationSettings: "'wght' 300" }}>{item.icon}</span>
+                    <span className="text-white/70 text-xs">{item.label}</span>
                   </div>
-                </div>
-                <div className="w-7 h-7 rounded-full border border-white/20 flex items-center justify-center">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '14px', fontVariationSettings: "'wght' 300" }}>arrow_upward</span>
-                </div>
+                ))}
               </div>
-
-              {/* Workflow system */}
-              <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
-                <div className="flex items-center gap-3">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '18px', fontVariationSettings: "'wght' 200" }}>settings</span>
-                  <div className="flex flex-col">
-                    <span className="text-white text-xs font-semibold">Workflow system</span>
-                    <span className="text-white/40 text-xs">Update available.</span>
-                  </div>
-                </div>
-                <div className="w-7 h-7 rounded-full border border-white/20 flex items-center justify-center">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '14px', fontVariationSettings: "'wght' 300" }}>arrow_upward</span>
-                </div>
-              </div>
-
             </div>
           </div>
 
-          {/* Process Card */}
-          <div className="w-full flex flex-col gap-3 bg-zinc-950 rounded-md border border-white/20 p-8 relative overflow-hidden">
-            <div className="text-white w-fit hover:bg-brand-strong box-border border font-medium rounded-[4px] text-xs px-2 py-1 border-white/20 backdrop-blur-md">
-              Step 4
-            </div>
-            <h1 className="text-xl text-left font-medium tracking-tighter text-heading md:text-2xl">
-              Continuous Optimization
-            </h1>
-            <p className="text-left text-white/70 font-medium text-sm md:text-sm">
-              We refine performance, analyze insights, and enhance automation for long-term growth.
+          {/* Step 2 - Code editor style mockup */}
+          <div className="w-full flex flex-col gap-3 bg-zinc-950 rounded-xl border border-white/10 p-6 relative overflow-hidden">
+            <div className="text-white w-fit border font-medium rounded-[4px] text-xs px-2 py-1 border-white/20">Step 2</div>
+            <h3 className="text-2xl font-medium tracking-tighter text-white">Create Your Wallet</h3>
+            <p className="text-white/50 text-sm leading-relaxed">
+              Your seed phrase is generated locally and never leaves your device. Ever.
             </p>
 
-            {/* Items list */}
-            <div className="w-full flex flex-col rounded-md border border-white/10 overflow-hidden mt-2">
-
-              {/* Chatbot system */}
-              <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
-                <div className="flex items-center gap-3">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '18px', fontVariationSettings: "'wght' 200" }}>chat</span>
-                  <div className="flex flex-col">
-                    <span className="text-white text-xs font-semibold">Chatbot system</span>
-                    <span className="text-white/40 text-xs">Efficiency will increase by 20%</span>
-                  </div>
-                </div>
-                <div className="w-7 h-7 rounded-full border border-purple-500/50 flex items-center justify-center">
-                  <span className="material-symbols-rounded text-purple-400" style={{ fontSize: '14px', fontVariationSettings: "'wght' 300" }}>refresh</span>
-                </div>
+            {/* Mockup: code editor */}
+            <div className="w-full mt-2 rounded-lg overflow-hidden border border-white/10 bg-black font-mono">
+              {/* Browser bar */}
+              <div className="flex items-center gap-2 px-3 py-2 border-b border-white/10 bg-zinc-900/60">
+                <div className="w-2.5 h-2.5 rounded-full bg-white/20" />
+                <div className="w-2.5 h-2.5 rounded-full bg-white/20" />
+                <div className="w-2.5 h-2.5 rounded-full bg-white/20" />
+                <div className="flex-1 mx-2 bg-zinc-800 rounded h-4" />
               </div>
-
-              {/* Workflow system */}
-              <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
-                <div className="flex items-center gap-3">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '18px', fontVariationSettings: "'wght' 200" }}>settings</span>
-                  <div className="flex flex-col">
-                    <span className="text-white text-xs font-semibold">Workflow system</span>
-                    <span className="text-white/40 text-xs">Update available.</span>
-                  </div>
-                </div>
-                <div className="w-7 h-7 rounded-full border border-white/20 flex items-center justify-center">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '14px', fontVariationSettings: "'wght' 300" }}>arrow_upward</span>
-                </div>
+              {/* Code lines */}
+              <div className="p-4 flex flex-col gap-1.5 text-[11px]">
+                <p><span className="text-white/20">01</span> <span className="text-white/30">const</span> <span className="text-red-400">wallet</span> <span className="text-white/30">=</span> <span className="text-white/50">nexus</span><span className="text-white/30">.</span><span className="text-red-300">create</span><span className="text-white/30">()</span></p>
+                <p><span className="text-white/20">02</span> <span className="text-white/30">const</span> <span className="text-red-400">seed</span> <span className="text-white/30">=</span> <span className="text-white/50">wallet</span><span className="text-white/30">.</span><span className="text-red-300">generateSeed</span><span className="text-white/30">(24)</span></p>
+                <p><span className="text-white/20">03</span> <span className="text-white/30">wallet</span><span className="text-red-300">.encrypt</span><span className="text-white/30">(</span><span className="text-white/50">'AES-256'</span><span className="text-white/30">)</span></p>
+                <p><span className="text-white/20">04</span> <span className="text-white/30">wallet</span><span className="text-red-300">.enableBiometrics</span><span className="text-white/30">(</span><span className="text-white/50">true</span><span className="text-white/30">)</span></p>
+                <p><span className="text-white/20">05</span> <span className="text-green-400/70">// ✓ Wallet secured locally</span></p>
               </div>
-
-              {/* Workflow system */}
-              <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
-                <div className="flex items-center gap-3">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '18px', fontVariationSettings: "'wght' 200" }}>settings</span>
-                  <div className="flex flex-col">
-                    <span className="text-white text-xs font-semibold">Workflow system</span>
-                    <span className="text-white/40 text-xs">Update available.</span>
-                  </div>
-                </div>
-                <div className="w-7 h-7 rounded-full border border-white/20 flex items-center justify-center">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '14px', fontVariationSettings: "'wght' 300" }}>arrow_upward</span>
-                </div>
-              </div>
-
             </div>
           </div>
 
-          {/* Process Card */}
-          <div className="w-full flex flex-col gap-3 bg-zinc-950 rounded-md border border-white/20 p-8 relative overflow-hidden">
-            <div className="text-white w-fit hover:bg-brand-strong box-border border font-medium rounded-[4px] text-xs px-2 py-1 border-white/20 backdrop-blur-md">
-              Step 4
-            </div>
-            <h1 className="text-xl text-left font-medium tracking-tighter text-heading md:text-2xl">
-              Continuous Optimization
-            </h1>
-            <p className="text-left text-white/70 font-medium text-sm md:text-sm">
-              We refine performance, analyze insights, and enhance automation for long-term growth.
+          {/* Step 3 - Integration/connect style */}
+          <div className="w-full flex flex-col gap-3 bg-zinc-950 rounded-xl border border-white/10 p-6 relative overflow-hidden">
+            <div className="text-white w-fit border font-medium rounded-[4px] text-xs px-2 py-1 border-white/20">Step 3</div>
+            <h3 className="text-2xl font-medium tracking-tighter text-white">Add Your Assets</h3>
+            <p className="text-white/50 text-sm leading-relaxed">
+              Import existing wallets or receive crypto directly. Nexus auto-detects tokens across all chains.
             </p>
 
-            {/* Items list */}
-            <div className="w-full flex flex-col rounded-md border border-white/10 overflow-hidden mt-2">
-
-              {/* Chatbot system */}
-              <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
-                <div className="flex items-center gap-3">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '18px', fontVariationSettings: "'wght' 200" }}>chat</span>
-                  <div className="flex flex-col">
-                    <span className="text-white text-xs font-semibold">Chatbot system</span>
-                    <span className="text-white/40 text-xs">Efficiency will increase by 20%</span>
-                  </div>
+            {/* Mockup: connection diagram */}
+            <div className="w-full mt-2 rounded-lg border border-white/10 bg-black p-4 flex items-center justify-between gap-3">
+              {/* Nexus side */}
+              <div className="flex flex-col items-center gap-2">
+                <div className="w-14 h-14 rounded-xl bg-zinc-900 border border-white/10 flex items-center justify-center">
+                  <img src="/svg/nexus_icon_white.svg" className="w-7 h-7 opacity-80" alt="Nexus" />
                 </div>
-                <div className="w-7 h-7 rounded-full border border-purple-500/50 flex items-center justify-center">
-                  <span className="material-symbols-rounded text-purple-400" style={{ fontSize: '14px', fontVariationSettings: "'wght' 300" }}>refresh</span>
-                </div>
+                <span className="text-white/40 text-[10px]">Nexus</span>
               </div>
 
-              {/* Workflow system */}
-              <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
-                <div className="flex items-center gap-3">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '18px', fontVariationSettings: "'wght' 200" }}>settings</span>
-                  <div className="flex flex-col">
-                    <span className="text-white text-xs font-semibold">Workflow system</span>
-                    <span className="text-white/40 text-xs">Update available.</span>
+              {/* Connecting lines */}
+              <div className="flex-1 flex flex-col gap-2">
+                {["BTC", "ETH", "SOL"].map((chain, i) => (
+                  <div key={i} className="flex items-center gap-1">
+                    <div className="flex-1 h-px bg-gradient-to-r from-red-600/80 to-white/10" />
+                    <span className="text-[9px] text-white/30 px-1">{chain}</span>
+                    <div className="flex-1 h-px bg-gradient-to-l from-red-600/80 to-white/10" />
                   </div>
-                </div>
-                <div className="w-7 h-7 rounded-full border border-white/20 flex items-center justify-center">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '14px', fontVariationSettings: "'wght' 300" }}>arrow_upward</span>
-                </div>
+                ))}
               </div>
 
-              {/* Workflow system */}
-              <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
-                <div className="flex items-center gap-3">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '18px', fontVariationSettings: "'wght' 200" }}>settings</span>
-                  <div className="flex flex-col">
-                    <span className="text-white text-xs font-semibold">Workflow system</span>
-                    <span className="text-white/40 text-xs">Update available.</span>
+              {/* Chains side */}
+              <div className="flex flex-col items-center gap-1.5">
+                {[
+                  { icon: "currency_bitcoin", label: "Bitcoin" },
+                  { icon: "toll", label: "Ethereum" },
+                  { icon: "circle", label: "Solana" },
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-1.5 bg-zinc-900 border border-white/10 rounded-full px-2 py-1">
+                    <span className="material-symbols-rounded text-white/50" style={{ fontSize: '12px', fontVariationSettings: "'wght' 300" }}>{item.icon}</span>
+                    <span className="text-white/50 text-[10px]">{item.label}</span>
                   </div>
-                </div>
-                <div className="w-7 h-7 rounded-full border border-white/20 flex items-center justify-center">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '14px', fontVariationSettings: "'wght' 300" }}>arrow_upward</span>
-                </div>
+                ))}
               </div>
-
             </div>
           </div>
 
-          {/* Process Card */}
-          <div className="w-full flex flex-col gap-3 bg-zinc-950 rounded-md border border-white/20 p-8 relative overflow-hidden">
-            <div className="text-white w-fit hover:bg-brand-strong box-border border font-medium rounded-[4px] text-xs px-2 py-1 border-white/20 backdrop-blur-md">
-              Step 4
-            </div>
-            <h1 className="text-xl text-left font-medium tracking-tighter text-heading md:text-2xl">
-              Continuous Optimization
-            </h1>
-            <p className="text-left text-white/70 font-medium text-sm md:text-sm">
-              We refine performance, analyze insights, and enhance automation for long-term growth.
+          {/* Step 4 - Status list style */}
+          <div className="w-full flex flex-col gap-3 bg-zinc-950 rounded-xl border border-white/10 p-6 relative overflow-hidden">
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-20 bg-red-600/10 blur-3xl rounded-full pointer-events-none" />
+            <div className="text-white w-fit border font-medium rounded-[4px] text-xs px-2 py-1 border-white/20">Step 4</div>
+            <h3 className="text-2xl font-medium tracking-tighter text-white">Trade, Swap & Grow</h3>
+            <p className="text-white/50 text-sm leading-relaxed">
+              Swap tokens, track P&L, and connect to DeFi — all without leaving Nexus.
             </p>
 
-            {/* Items list */}
             <div className="w-full flex flex-col rounded-md border border-white/10 overflow-hidden mt-2">
-
-              {/* Chatbot system */}
-              <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
-                <div className="flex items-center gap-3">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '18px', fontVariationSettings: "'wght' 200" }}>chat</span>
-                  <div className="flex flex-col">
-                    <span className="text-white text-xs font-semibold">Chatbot system</span>
-                    <span className="text-white/40 text-xs">Efficiency will increase by 20%</span>
+              {[
+                { icon: "swap_horiz", label: "DEX Swap", sub: "Best rate across 15 sources", status: "check", color: "text-green-400", borderColor: "border-green-500/30" },
+                { icon: "bar_chart", label: "Portfolio Tracker", sub: "P&L up +12.4% this week", status: "trending_up", color: "text-green-400", borderColor: "border-green-500/30" },
+                { icon: "usb", label: "Hardware Wallet", sub: "Ledger update available", status: "arrow_upward", color: "text-red-400", borderColor: "border-red-500/30" },
+              ].map((item, i) => (
+                <div key={i} className="flex items-center justify-between px-4 py-3 border-b border-white/10 last:border-0">
+                  <div className="flex items-center gap-3">
+                    <span className="material-symbols-rounded text-white/50" style={{ fontSize: '16px', fontVariationSettings: "'wght' 300" }}>{item.icon}</span>
+                    <div className="flex flex-col">
+                      <span className="text-white text-xs font-semibold">{item.label}</span>
+                      <span className="text-white/30 text-[10px]">{item.sub}</span>
+                    </div>
+                  </div>
+                  <div className={`w-7 h-7 rounded-full border ${item.borderColor} flex items-center justify-center`}>
+                    <span className={`material-symbols-rounded ${item.color}`} style={{ fontSize: '14px', fontVariationSettings: "'wght' 300" }}>{item.status}</span>
                   </div>
                 </div>
-                <div className="w-7 h-7 rounded-full border border-purple-500/50 flex items-center justify-center">
-                  <span className="material-symbols-rounded text-purple-400" style={{ fontSize: '14px', fontVariationSettings: "'wght' 300" }}>refresh</span>
-                </div>
-              </div>
-
-              {/* Workflow system */}
-              <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
-                <div className="flex items-center gap-3">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '18px', fontVariationSettings: "'wght' 200" }}>settings</span>
-                  <div className="flex flex-col">
-                    <span className="text-white text-xs font-semibold">Workflow system</span>
-                    <span className="text-white/40 text-xs">Update available.</span>
-                  </div>
-                </div>
-                <div className="w-7 h-7 rounded-full border border-white/20 flex items-center justify-center">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '14px', fontVariationSettings: "'wght' 300" }}>arrow_upward</span>
-                </div>
-              </div>
-
-              {/* Workflow system */}
-              <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
-                <div className="flex items-center gap-3">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '18px', fontVariationSettings: "'wght' 200" }}>settings</span>
-                  <div className="flex flex-col">
-                    <span className="text-white text-xs font-semibold">Workflow system</span>
-                    <span className="text-white/40 text-xs">Update available.</span>
-                  </div>
-                </div>
-                <div className="w-7 h-7 rounded-full border border-white/20 flex items-center justify-center">
-                  <span className="material-symbols-rounded text-white/60" style={{ fontSize: '14px', fontVariationSettings: "'wght' 300" }}>arrow_upward</span>
-                </div>
-              </div>
-
+              ))}
             </div>
           </div>
+
         </div>
       </div>
 
