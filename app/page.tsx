@@ -732,54 +732,111 @@ export default function Home() {
       </div>
 
       {/* Carousel Section */}
-      <div className="w-full py-40 pt-0 flex flex-col gap-10 px-6 items-center justify-center relative">
-        <div className="text-white hover:bg-brand-strong box-border border font-medium leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md" >
+      <div className="w-full py-20 flex flex-col gap-10 px-6 items-center justify-center relative">
+        <div className="text-white border font-medium rounded-[4px] text-xs px-2 py-1 border-white/20">
           Case Studies
         </div>
         <div className="w-full max-w-4xl flex items-center justify-center gap-2 flex-col">
-          <h1 className="text-3xl text-center font-medium leading-10 md:leading-15 tracking-tighter text-heading md:text-5xl">
-            See How Smart AI Automation Transforms Businesses
+          <h1 className="text-3xl text-center font-medium leading-10 md:leading-15 tracking-tighter text-white md:text-5xl">
+            Real holders. Real results.
           </h1>
-          <p className="mb-8 text-center max-w-xl text-white/90 font-normal text-md md:text-md">
-            See how AI automation streamlines operations, boosts and drives growth.
+          <p className="text-center max-w-xl text-white/50 font-normal text-sm">
+            See how Nexus users took back control of their crypto and never looked back.
           </p>
         </div>
 
-        <div className="grid w-full  gap-7 max-w-4xl">
-          <Carousel className="w-full overflow-hidden">
-            <CarouselContent>
-              {Array.from({ length: 5 }).map((_, index) => (
-                <CarouselItem key={index}>
+        <FadeUp delay={0.5}>
+          <div className="grid w-full gap-7 max-w-4xl">
+            <Carousel className="w-full overflow-hidden">
+              <CarouselContent>
+
+                {/* Case Study 1 */}
+                <CarouselItem>
                   <div className="flex flex-col md:flex-row items-center justify-start gap-6 md:gap-10 p-2">
-
-                    {/* Image */}
-                    <div className="overflow-hidden rounded-lg w-full md:w-1/2 shrink-0 bg-red-600 h-[300px] md:h-[450px]">
-                      <img className="w-full h-full object-cover" src="https://picsum.photos/id/26/200/300" alt="" />
+                    <div className="overflow-hidden rounded-xl w-full md:w-1/2 shrink-0 bg-zinc-900 border border-white/10 h-[300px] md:h-[420px]">
+                      <img className="w-full h-full object-cover opacity-80" src="https://picsum.photos/id/1018/800/600" alt="Marcus D." />
                     </div>
-
-                    {/* Text */}
                     <div className="w-full flex flex-col gap-4">
-                      <span className="text-2xl font-medium">Logo Ipsum</span>
-                      <div className="flex flex-col gap-2">
-                        <h1 className="text-xl font-medium">"Ai-Driven Faster Forecasting cut inventory waste by 40% for Trailforge"</h1>
-                        <p className="text-[14px] text-white/80">Trailforge, a Suitcase brand, faced stock market issues and inefficiencies. By implementing AI-driven forecasting, they reduced inventory waste by 40% and improved demand planning.</p>
+                      <div className="flex items-center gap-2">
+                        <div className="w-8 h-8 rounded-full bg-zinc-800 border border-white/10 flex items-center justify-center text-white text-xs font-bold">M</div>
+                        <div>
+                          <p className="text-white text-sm font-semibold">@defi_marcus</p>
+                          <p className="text-white/30 text-xs">12k followers · Crypto Twitter</p>
+                        </div>
                       </div>
-                      <p className="text-md text-white">Impact:</p>
-                      <ul className="list-disc list-inside pl-4 text-[16px]">
-                        <li>40% Less Inventory Waste</li>
-                        <li>35% Faster Production</li>
-                        <li>20% More accurate forecasting</li>
-                        <li>25% Faster Fulfillment</li>
+                      <h2 className="text-xl font-medium text-white">"Moved everything off Binance after FTX. Nexus was the only wallet that felt serious enough."</h2>
+                      <p className="text-sm text-white/50 leading-relaxed">After the FTX collapse, Marcus migrated $340K in assets across 4 chains to Nexus in under an hour. Zero downtime, zero data exposure, full self-custody from day one.</p>
+                      <p className="text-sm text-white font-medium">Impact:</p>
+                      <ul className="list-disc list-inside pl-4 text-sm text-white/70 space-y-1">
+                        <li>$340K migrated across 4 chains in 1 hour</li>
+                        <li>Zero custodial exposure post-migration</li>
+                        <li>DEX swaps saved $1,200+ in CEX fees</li>
+                        <li>Hardware wallet paired in under 2 minutes</li>
                       </ul>
                     </div>
-
                   </div>
                 </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
-          <p className="w-full text-center font-medium text-md mt-5 text-white/70">←  DRAG TO EXPLORE  →</p>
-        </div>
+
+                {/* Case Study 2 */}
+                <CarouselItem>
+                  <div className="flex flex-col md:flex-row items-center justify-start gap-6 md:gap-10 p-2">
+                    <div className="overflow-hidden rounded-xl w-full md:w-1/2 shrink-0 bg-zinc-900 border border-white/10 h-[300px] md:h-[420px]">
+                      <img className="w-full h-full object-cover opacity-80" src="https://picsum.photos/id/1025/800/600" alt="Yuki T." />
+                    </div>
+                    <div className="w-full flex flex-col gap-4">
+                      <div className="flex items-center gap-2">
+                        <div className="w-8 h-8 rounded-full bg-zinc-800 border border-white/10 flex items-center justify-center text-white text-xs font-bold">Y</div>
+                        <div>
+                          <p className="text-white text-sm font-semibold">Yuki T.</p>
+                          <p className="text-white/30 text-xs">Crypto Trader · Tokyo, Japan</p>
+                        </div>
+                      </div>
+                      <h2 className="text-xl font-medium text-white">"Managing ETH, SOL, and BTC from one wallet changed how I trade entirely."</h2>
+                      <p className="text-sm text-white/50 leading-relaxed">Yuki was juggling 3 separate wallets and losing track of his portfolio across chains. Nexus consolidated everything into one dashboard with live P&L tracking and instant swap execution.</p>
+                      <p className="text-sm text-white font-medium">Impact:</p>
+                      <ul className="list-disc list-inside pl-4 text-sm text-white/70 space-y-1">
+                        <li>3 wallets consolidated into one</li>
+                        <li>Portfolio P&L visibility increased by 100%</li>
+                        <li>Swap execution time cut from 8 min to 30 sec</li>
+                        <li>Saved $800/month in exchange withdrawal fees</li>
+                      </ul>
+                    </div>
+                  </div>
+                </CarouselItem>
+
+                {/* Case Study 3 */}
+                <CarouselItem>
+                  <div className="flex flex-col md:flex-row items-center justify-start gap-6 md:gap-10 p-2">
+                    <div className="overflow-hidden rounded-xl w-full md:w-1/2 shrink-0 bg-zinc-900 border border-white/10 h-[300px] md:h-[420px]">
+                      <img className="w-full h-full object-cover opacity-80" src="https://picsum.photos/id/1074/800/600" alt="Rina V." />
+                    </div>
+                    <div className="w-full flex flex-col gap-4">
+                      <div className="flex items-center gap-2">
+                        <div className="w-8 h-8 rounded-full bg-zinc-800 border border-white/10 flex items-center justify-center text-white text-xs font-bold">R</div>
+                        <div>
+                          <p className="text-white text-sm font-semibold">Rina V.</p>
+                          <p className="text-white/30 text-xs">DeFi Developer · Berlin, Germany</p>
+                        </div>
+                      </div>
+                      <h2 className="text-xl font-medium text-white">"The DEX aggregator finds rates no other wallet even comes close to matching."</h2>
+                      <p className="text-sm text-white/50 leading-relaxed">As a DeFi developer, Rina executes dozens of swaps weekly. Nexus's built-in aggregator consistently surfaces better rates than manual routing, saving her significant capital over time.</p>
+                      <p className="text-sm text-white font-medium">Impact:</p>
+                      <ul className="list-disc list-inside pl-4 text-sm text-white/70 space-y-1">
+                        <li>Average 1.8% better swap rates vs manual routing</li>
+                        <li>$2,400+ saved in slippage over 3 months</li>
+                        <li>Connected to 6 chains from a single interface</li>
+                        <li>Open-source audit gave full code confidence</li>
+                      </ul>
+                    </div>
+                  </div>
+                </CarouselItem>
+
+              </CarouselContent>
+            </Carousel>
+            <p className="w-full text-center font-medium text-xs mt-2 text-white/30 tracking-widest">← DRAG TO EXPLORE →</p>
+          </div>
+        </FadeUp>
+
       </div>
 
       {/* Gird Section */}
@@ -805,16 +862,19 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
 
             {/* Card 1 */}
-            <div className="flex flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
-              <div className="w-9 h-9 rounded-full flex items-center justify-center">
-                <span className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'wght' 300" }}>key</span>
+            <FadeUp delay={0.3}>
+              <div className="flex flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
+                <div className="w-9 h-9 rounded-full flex items-center justify-center">
+                  <span className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'wght' 300" }}>key</span>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-lg font-semibold">True Self-Custody</h3>
+                  <p className="text-sm text-white/60 leading-relaxed">Your private keys are generated and stored only on your device. Nexus has zero access. Zero.</p>
+                </div>
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-18 bg-red-600/40 blur-2xl rounded-full" />
               </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="text-lg font-semibold">True Self-Custody</h3>
-                <p className="text-sm text-white/60 leading-relaxed">Your private keys are generated and stored only on your device. Nexus has zero access. Zero.</p>
-              </div>
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-18 bg-red-600/40 blur-2xl rounded-full" />
-            </div>
+            </FadeUp>
+
 
             {/* Card 2 */}
             <div className="flex flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
