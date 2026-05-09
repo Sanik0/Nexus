@@ -11,6 +11,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from "react-icons/si";
+import AnimatedContent from "@/components/AnimatedContent";
 
 // LogoLoop
 const techLogos = [
@@ -158,7 +159,7 @@ export default function Home() {
               <BlurText
                 className="mb-6 max-w-4xl flex flex-row flex-wrap items-center justify-center text-center mx-auto text-4xl font-semibold leading-10 md:leading-20 tracking-tighter text-heading md:text-5xl lg:text-6xl"
                 text=" NEXUS — The Self Custody Crypto Wallet"
-                delay={50}
+                delay={200}
                 animateBy="words"
                 direction="top"
               />
@@ -169,25 +170,40 @@ export default function Home() {
               <BlurText
                 className="mb-8 flex flex-row flex-wrap items-center justify-center mx-auto text-center text-white/90 font-normal text-body md:text-xl"
                 text=" A sleek, dark, modern crypto wallet targeting serious crypto users"
-                delay={50}
+                delay={200}
                 animateBy="words"
                 direction="top"
               />
             </div>
-            <form className="w-full mx-auto flex items-center justify-center gap-3 ">
-              <button
-                type="button"
-                className="text-white bg-red-600 hover:bg-brand-strong box-border border border-transparent font-medium leading-5 rounded-md text-sm px-3 py-2 focus:outline-none"
-              >
-                Get in touch
-              </button>
-              <button
-                type="button"
-                className="text-white hover:bg-brand-strong box-border border border-transparent font-medium leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md"
-              >
-                View Services
-              </button>
-            </form>
+            <AnimatedContent
+              distance={100}
+              direction="vertical"
+              reverse={false}
+              duration={1.5}
+              ease="power3.out"
+              initialOpacity={0}
+              animateOpacity
+              scale={1}
+              threshold={0.1}
+              delay={1.5}
+            >
+              <div>
+                <form className="w-full mx-auto flex items-center justify-center gap-3 ">
+                  <button
+                    type="button"
+                    className="text-white bg-red-600 hover:bg-brand-strong box-border border border-transparent font-medium leading-5 rounded-md text-sm px-3 py-2 focus:outline-none"
+                  >
+                    Get in touch
+                  </button>
+                  <button
+                    type="button"
+                    className="text-white hover:bg-brand-strong box-border border border-transparent font-medium leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md"
+                  >
+                    View Services
+                  </button>
+                </form>
+              </div>
+            </AnimatedContent>
           </div>
         </section>
       </div>
