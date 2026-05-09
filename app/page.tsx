@@ -863,7 +863,7 @@ export default function Home() {
 
             {/* Card 1 */}
             <FadeUp delay={0.3}>
-              <div className="flex flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
+              <div className="flex h-full flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
                 <div className="w-9 h-9 rounded-full flex items-center justify-center">
                   <span className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'wght' 300" }}>key</span>
                 </div>
@@ -877,64 +877,76 @@ export default function Home() {
 
 
             {/* Card 2 */}
-            <div className="flex flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
-              <div className="w-9 h-9 rounded-full flex items-center justify-center">
-                <span className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'wght' 300" }}>lan</span>
+            <FadeUp delay={0.5}>
+              <div className="flex h-full flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
+                <div className="w-9 h-9 rounded-full flex items-center justify-center">
+                  <span className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'wght' 300" }}>lan</span>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-lg font-semibold">Multi-Chain Native</h3>
+                  <p className="text-sm text-white/60 leading-relaxed">Ethereum, Solana, Bitcoin, BNB Chain, Polygon, Arbitrum — manage everything in one place.</p>
+                </div>
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-18 bg-red-600/40 blur-2xl rounded-full" />
               </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="text-lg font-semibold">Multi-Chain Native</h3>
-                <p className="text-sm text-white/60 leading-relaxed">Ethereum, Solana, Bitcoin, BNB Chain, Polygon, Arbitrum — manage everything in one place.</p>
-              </div>
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-18 bg-red-600/40 blur-2xl rounded-full" />
-            </div>
+            </FadeUp>
+
 
             {/* Card 3 */}
-            <div className="flex flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
-              <div className="w-9 h-9 rounded-full flex items-center justify-center">
-                <span className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'wght' 300" }}>swap_horiz</span>
+            <FadeUp delay={0.7}>
+              <div className="flex h-full flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
+                <div className="w-9 h-9 rounded-full flex items-center justify-center">
+                  <span className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'wght' 300" }}>swap_horiz</span>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-lg font-semibold">Built-In DEX Swap</h3>
+                  <p className="text-sm text-white/60 leading-relaxed">Swap tokens directly inside your wallet at the best rates across 15+ decentralized exchanges. No account needed.</p>
+                </div>
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-18 bg-red-600/40 blur-2xl rounded-full" />
               </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="text-lg font-semibold">Built-In DEX Swap</h3>
-                <p className="text-sm text-white/60 leading-relaxed">Swap tokens directly inside your wallet at the best rates across 15+ decentralized exchanges. No account needed.</p>
-              </div>
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-18 bg-red-600/40 blur-2xl rounded-full" />
-            </div>
+            </FadeUp>
 
             {/* Card 4 */}
-            <div className="flex flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
-              <div className="w-9 h-9 rounded-full flex items-center justify-center">
-                <span className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'wght' 300" }}>shield</span>
+            <FadeUp delay={0.9}>
+              <div className="flex h-full flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
+                <div className="w-9 h-9 rounded-full flex items-center justify-center">
+                  <span className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'wght' 300" }}>shield</span>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-lg font-semibold">256-bit Encryption</h3>
+                  <p className="text-sm text-white/60 leading-relaxed">Military-grade AES encryption protects your wallet locally. No cloud. No exposure. No compromise.</p>
+                </div>
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-18 bg-red-600/40 blur-2xl rounded-full" />
               </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="text-lg font-semibold">256-bit Encryption</h3>
-                <p className="text-sm text-white/60 leading-relaxed">Military-grade AES encryption protects your wallet locally. No cloud. No exposure. No compromise.</p>
-              </div>
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-18 bg-red-600/40 blur-2xl rounded-full" />
-            </div>
+            </FadeUp>
 
             {/* Card 5 */}
-            <div className="flex flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
-              <div className="w-9 h-9 rounded-full flex items-center justify-center">
-                <span className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'wght' 300" }}>bar_chart</span>
+            <FadeUp delay={1.1}>
+              <div className="flex h-full flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
+
+                <div className="w-9 h-9 rounded-full flex items-center justify-center">
+                  <span className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'wght' 300" }}>bar_chart</span>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-lg font-semibold">Portfolio Tracker</h3>
+                  <p className="text-sm text-white/60 leading-relaxed">Track your entire crypto portfolio across all chains in real-time. P&L, history, and insights in one dashboard.</p>
+                </div>
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-18 bg-red-600/40 blur-2xl rounded-full" />
               </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="text-lg font-semibold">Portfolio Tracker</h3>
-                <p className="text-sm text-white/60 leading-relaxed">Track your entire crypto portfolio across all chains in real-time. P&L, history, and insights in one dashboard.</p>
-              </div>
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-18 bg-red-600/40 blur-2xl rounded-full" />
-            </div>
+            </FadeUp>
 
             {/* Card 6 */}
-            <div className="flex flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
-              <div className="w-9 h-9 rounded-full flex items-center justify-center">
-                <span className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'wght' 300" }}>usb</span>
+            <FadeUp delay={1.3}>
+              <div className="flex h-full flex-col gap-4 bg-black border border-white/10 rounded-xl p-6 relative overflow-hidden">
+                <div className="w-9 h-9 rounded-full flex items-center justify-center">
+                  <span className="material-symbols-rounded text-white" style={{ fontSize: '18px', fontVariationSettings: "'wght' 300" }}>usb</span>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-lg font-semibold">Hardware Wallet Bridge</h3>
+                  <p className="text-sm text-white/60 leading-relaxed">Pair with Ledger or Trezor in seconds for cold storage without ever leaving the Nexus interface.</p>
+                </div>
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-18 bg-red-600/40 blur-2xl rounded-full" />
               </div>
-              <div className="flex flex-col gap-2">
-                <h3 className="text-lg font-semibold">Hardware Wallet Bridge</h3>
-                <p className="text-sm text-white/60 leading-relaxed">Pair with Ledger or Trezor in seconds for cold storage without ever leaving the Nexus interface.</p>
-              </div>
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-18 bg-red-600/40 blur-2xl rounded-full" />
-            </div>
+            </FadeUp>
 
           </div>
         </div>
