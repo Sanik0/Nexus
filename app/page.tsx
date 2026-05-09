@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Plasma from '@/components/Plasma';
 import LogoLoop from "@/components/LogoLoop";
+import BlurText from "@/components/BlurText";
 import {
   Carousel,
   CarouselContent,
@@ -153,12 +154,26 @@ export default function Home() {
                 />
               </svg>
             </div>
-            <h1 className="mb-6 max-w-7xl text-4xl font-semibold leading-10 md:leading-20 tracking-tighter text-heading md:text-5xl lg:text-6xl">
-              NEXUS — The Self-Custody <br /> Crypto Wallet
-            </h1>
-            <p className="mb-8 text-white/90 font-normal text-body md:text-xl">
-              A sleek, dark, modern crypto wallet targeting serious crypto users
-            </p>
+            <div className="w-full">
+              <BlurText
+                className="mb-6 max-w-4xl flex flex-row flex-wrap items-center justify-center text-center mx-auto text-4xl font-semibold leading-10 md:leading-20 tracking-tighter text-heading md:text-5xl lg:text-6xl"
+                text=" NEXUS — The Self Custody Crypto Wallet"
+                delay={50}
+                animateBy="words"
+                direction="top"
+              />
+            </div>
+
+
+            <div className="w-full flex items-center justify-center text-center">
+              <BlurText
+                className="mb-8 flex flex-row flex-wrap items-center justify-center mx-auto text-center text-white/90 font-normal text-body md:text-xl"
+                text=" A sleek, dark, modern crypto wallet targeting serious crypto users"
+                delay={50}
+                animateBy="words"
+                direction="top"
+              />
+            </div>
             <form className="w-full mx-auto flex items-center justify-center gap-3 ">
               <button
                 type="button"
