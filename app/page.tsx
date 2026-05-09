@@ -128,7 +128,7 @@ export default function Home() {
         </div>
         <section className=" pt-20 mb-40">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
-            <FadeContent blur={true} duration={2500} easing="ease-out" initialOpacity={0}>
+            <FadeContent blur={true} duration={3000} initialOpacity={0}>
               <div
                 className="w-auto inline-flex items-center p-1 pe-2 mb-6 text-sm text-fg-brand-strong rounded-full border border-white/20"
                 role="alert"
@@ -212,22 +212,36 @@ export default function Home() {
       </div>
 
       {/* Tech Logos */}
-      <div className=" flex items-center justify-center gap-8 flex-col relative">
-        <h4 className="text-lg font-semibold text-heading">Over 50+ business trust us</h4>
-        <LogoLoop
-          className="max-w-5xl"
-          logos={techLogos}
-          speed={40}
-          direction="left"
-          logoHeight={50}
-          gap={50}
-          hoverSpeed={0}
-          scaleOnHover
-          fadeOut
-          fadeOutColor="#000000"
-          ariaLabel="Technology partners"
-        />
-      </div>
+      <AnimatedContent
+        distance={100}
+        direction="vertical"
+        reverse={false}
+        duration={1.5}
+        ease="power3.out"
+        initialOpacity={0}
+        animateOpacity
+        scale={1}
+        threshold={0.1}
+        delay={1}
+      >
+        <div className=" flex items-center justify-center gap-8 flex-col relative">
+          <h4 className="text-lg font-semibold text-heading">Over 50+ business trust us</h4>
+          <LogoLoop
+            className="max-w-5xl"
+            logos={techLogos}
+            speed={40}
+            direction="left"
+            logoHeight={50}
+            gap={50}
+            hoverSpeed={0}
+            scaleOnHover
+            fadeOut
+            fadeOutColor="#000000"
+            ariaLabel="Technology partners"
+          />
+        </div>
+      </AnimatedContent>
+
 
       {/* Services Section */}
       <div className="w-full py-40 flex flex-col gap-10 px-6 items-center justify-center relative">
