@@ -18,7 +18,7 @@ export default function FadeUp({ children, delay = 0 }: { children: React.ReactN
         opacity: 1,
         y: 0,
         duration: 2,
-        delay: 0.5,
+        delay,
         ease: "power3.out",
         scrollTrigger: {
           trigger: el,
