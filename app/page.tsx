@@ -67,17 +67,17 @@ export default function Home() {
           <div className={`${menuOpen ? "flex" : "hidden"} md:flex items-center justify-between w-full md:w-auto md:order-1`}>
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 w-full md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
               <li>
-                <a href="#" className="block py-2 px-3 text-white rounded md:bg-transparent md:p-0">
+                <a href="#home" className="block py-2 px-3 text-white rounded md:bg-transparent md:p-0">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 text-white/60 hover:text-white rounded md:border-0 md:p-0">
+                <a href="#about" className="block py-2 px-3 text-white/60 hover:text-white rounded md:border-0 md:p-0">
                   About
                 </a>
               </li>
               <li>
-                <a href="#" className="block py-2 px-3 text-white/60 hover:text-white rounded md:border-0 md:p-0">
+                <a href="#benefits" className="block py-2 px-3 text-white/60 hover:text-white rounded md:border-0 md:p-0">
                   Features
                 </a>
               </li>
@@ -92,7 +92,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <div className="w-full mt-18 relative">
+      <div id="home" className="w-full mt-18 relative">
         <div style={{ width: '100%', height: '600px', position: 'absolute' }}>
           <Plasma
             color="#DC2626"
@@ -209,7 +209,7 @@ export default function Home() {
       </FadeUp>
 
       {/* Services Section */}
-      <div className="w-full py-40 flex flex-col gap-10 px-6 items-center justify-center relative">
+      <div id="about" className="w-full py-40 flex flex-col gap-10 px-6 items-center justify-center relative">
         <div className="text-white hover:bg-brand-strong box-border border border-transparent font-medium leading-5 rounded-md text-sm px-3 py-2 border-white/20 backdrop-blur-md" >
           Our Services
         </div>
@@ -817,7 +817,7 @@ export default function Home() {
       </div>
 
       {/* Gird Section */}
-      <section className="w-full py-20 px-4 md:px-8">
+      <section id={"benefits"} className="w-full py-20 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
 
           {/* Header */}
