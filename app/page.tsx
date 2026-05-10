@@ -1188,7 +1188,30 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CTA Section */}
+      <div className="w-full px-6 py-20">
+        <div className="relative w-full max-w-4xl mx-auto rounded-2xl overflow-hidden border border-white/10 bg-black flex flex-col items-center justify-center py-24 px-6 text-center">
 
+          {/* Bottom-left glow */}
+          <div className="absolute bottom-0 left-0 w-72 h-52 bg-red-600/25 blur-3xl rounded-full pointer-events-none translate-y-1/2 -translate-x-1/4" />
+
+          {/* Top-right glow */}
+          <div className="absolute top-0 right-0 w-72 h-52 bg-red-600/25 blur-3xl rounded-full pointer-events-none -translate-y-1/2 translate-x-1/4" />
+
+          <h2 className="text-4xl md:text-6xl font-semibold tracking-tighter text-white max-w-2xl leading-tight mb-4">
+            Your keys. Your crypto. Take control today.
+          </h2>
+          <p className="text-white/50 text-sm mb-8">
+            Download Nexus free and own your assets in under 2 minutes.
+          </p>
+          <a href="#" className="flex items-center gap-2 bg-red-600 hover:bg-red-700 transition text-white font-medium text-sm px-6 py-3 rounded-lg">
+            Download Free
+            <span className="material-symbols-rounded" style={{ fontSize: '16px', fontVariationSettings: "'wght' 300" }}>arrow_outward</span>
+          </a>
+
+        </div>
+      </div>
+      
       {/* Footer */}
       <footer className="p-4 pt-15 bg-black relative sm:p-6 overflow-hidden">
         <div className="absolute top-0 inset-x-0 mx-auto w-3/4 h-15 bg-red-600/60 blur-3xl rounded-full pointer-events-none" />
