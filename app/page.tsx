@@ -249,41 +249,72 @@ export default function Home() {
 
               {/* Mockup */}
               <FadeUp delay={0.5}>
-                <div className="w-full h-80 bg-zinc-950 rounded-2xl p-5 pb-0 md:p-10 md:pb-0 relative overflow-hidden">
-                  <div className="w-full h-full bg-black rounded-xl border-white/20 border flex items-center justify-center flex-col gap-3 p-5">
-                    <div className="h-15 w-15 rounded-full border border-white/20 relatice overflow-hidden">
-                      <Plasma
-                        color="#DC2626"
-                        speed={0.6}
-                        direction="forward"
-                        scale={1.1}
-                        opacity={0.8}
-                        mouseInteractive={true}
-                      />
+                <div className="w-full h-80 bg-zinc-950 rounded-2xl p-5 pb-0 md:p-8 md:pb-0 relative overflow-hidden border border-white/10">
+                  <div className="w-full h-full bg-black rounded-xl border border-white/10 flex flex-col overflow-hidden">
+
+                    {/* Header */}
+                    <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">
+                      <div className="flex items-center gap-2">
+                        <img height={16} width={16} src="/svg/nexus_icon_white.svg" alt="" className="opacity-60" />
+                        <span className="text-white/60 text-xs font-medium">Nexus Wallet</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <div className="w-1.5 h-1.5 rounded-full bg-green-400" />
+                        <span className="text-green-400 text-[10px]">Secured</span>
+                      </div>
                     </div>
-                    <h1 className="text-base text-center font-medium  tracking-tighter text-heading md:text-xl">
-                      What can i help you automate?
-                    </h1>
-                    <p className="text-center max-w-xl text-white/90 font-normal text-xs md:text-md">
-                      We design, develop, and implement automation tools that help you work smarter, not harder
-                    </p>
-                    <form action="" className="w-full">
-                      <div className="w-full flex flex-col gap-3 border border-white/20 rounded-md focus:none p-3">
-                        <div className="flex items-center justify-center">
-                          <input type="text" className="w-full text-xs text-white/40" defaultValue={'Hello, world!'} />
-                          <div className="w-fit border-white/20 border p-1 rounded-[3px] flex items-center justify-center">
-                            <span className="material-symbols-rounded tet-red-600" style={{ fontSize: '15px', fontVariationSettings: "'wght' 100", color: '#DC2626' }}>send</span>
+
+                    {/* Balance */}
+                    <div className="flex flex-col items-center justify-center py-5 border-b border-white/10 gap-1">
+                      <span className="text-white/30 text-[10px] tracking-widest uppercase">Total Balance</span>
+                      <span className="text-white text-2xl font-semibold tracking-tighter">$24,891.03</span>
+                      <span className="text-green-400 text-xs">▲ +4.2% today</span>
+                    </div>
+
+                    {/* Quick actions */}
+                    <div className="flex items-center justify-around px-4 py-3 border-b border-white/10">
+                      {[
+                        { icon: "arrow_upward", label: "Send" },
+                        { icon: "arrow_downward", label: "Receive" },
+                        { icon: "swap_horiz", label: "Swap" },
+                        { icon: "more_horiz", label: "More" },
+                      ].map((action, i) => (
+                        <div key={i} className="flex flex-col items-center gap-1">
+                          <div className="w-8 h-8 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center">
+                            <span className="material-symbols-rounded text-white/60" style={{ fontSize: '14px', fontVariationSettings: "'wght' 300" }}>{action.icon}</span>
+                          </div>
+                          <span className="text-white/30 text-[9px]">{action.label}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Token list */}
+                    {[
+                      { icon: "currency_bitcoin", name: "Bitcoin", amount: "0.42 BTC", value: "$14,200", change: "+2.1%", positive: true },
+                      { icon: "toll", name: "Ethereum", amount: "3.1 ETH", value: "$8,400", change: "+5.8%", positive: true },
+                      { icon: "paid", name: "USDC", amount: "2,291 USDC", value: "$2,291", change: "0.0%", positive: true },
+                    ].map((token, i) => (
+                      <div key={i} className="flex items-center justify-between px-4 py-2.5 border-b border-white/5">
+                        <div className="flex items-center gap-2">
+                          <div className="w-6 h-6 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center">
+                            <span className="material-symbols-rounded text-white/40" style={{ fontSize: '12px', fontVariationSettings: "'wght' 300" }}>{token.icon}</span>
+                          </div>
+                          <div className="flex flex-col">
+                            <span className="text-white text-[11px] font-semibold">{token.name}</span>
+                            <span className="text-white/30 text-[9px]">{token.amount}</span>
                           </div>
                         </div>
-                        <div className="w-fit border-white/20 border p-1 px-2 flex gap-1 bg-zinc-950 rounded-full items-center justify-center" style={{ fontSize: '10px' }}>
-                          <span className="material-symbols-rounded tet-red-600" style={{ fontSize: '15px', fontVariationSettings: "'wght' 100", color: '#DC2626' }}>add</span>
-                          add documents
+                        <div className="flex flex-col items-end">
+                          <span className="text-white text-[11px] font-medium">{token.value}</span>
+                          <span className={`text-[9px] ${token.positive ? "text-green-400" : "text-red-400"}`}>{token.change}</span>
                         </div>
                       </div>
-                    </form>
+                    ))}
+
                   </div>
-                  <div className="absolute right-0 left-0 bottom-0 h-40 bg-gradient-to-t from-zinc-950 to-transparent">
-                  </div>
+
+                  {/* Fade bottom */}
+                  <div className="absolute right-0 left-0 bottom-0 h-24 bg-gradient-to-t from-zinc-950 to-transparent pointer-events-none" />
                 </div>
               </FadeUp>
             </div>
